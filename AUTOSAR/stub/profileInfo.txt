@@ -1,0 +1,7 @@
+#C:\Users\MY COMPUTER\Documents\MATLAB\TempControl_autosar_rtw\stub\Rte_AUTOSAR.h
+#this file contains the list of RTE methods that the profiling must filter out
+-Rte_IWrite_RE_Convert_Tempertature_PP_Tmp_Tmp_Value
+-Rte_IWriteRef_RE_Convert_Tempertature_PP_Tmp_Tmp_Value
+-Rte_IRead_RE_Receive_AdcValue_RP_Adc_Adc_Value
+-Rte_IrvIRead_RE_Convert_Tempertature_adc
+-Rte_IrvIWrite_RE_Receive_AdcValue_adc

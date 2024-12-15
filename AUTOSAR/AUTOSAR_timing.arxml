@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model AUTOSAR
+Model version                : 1.4
+Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
+XML source code generated on : Sun Dec 15 18:15:28 2024
+Model Checksum               : 4142415819 2990702679 1987836130 957988391
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Timing</SHORT-NAME>
+            <ELEMENTS>
+                <VFB-TIMING UUID="0a507399-d01c-5bea-1323-16b870a9ee1b">
+                    <SHORT-NAME>AUTOSAR_timing</SHORT-NAME>
+                    <TIMING-REQUIREMENTS>
+                        <EXECUTION-ORDER-CONSTRAINT UUID="4c9d0d7b-9500-59e7-b08c-32e305377ac2">
+                            <SHORT-NAME>EOC</SHORT-NAME>
+                            <BASE-COMPOSITION-REF DEST="COMPOSITION-SW-COMPONENT-TYPE">/Components/AUTOSAR</BASE-COMPOSITION-REF>
+                            <ORDERED-ELEMENTS>
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="ae4b6173-b20c-50cf-aa08-fec8d2da5a61">
+                                    <SHORT-NAME>Actuator_RE_Hardware_MainFunction</SHORT-NAME>
+                                    <COMPONENT-IREF>
+                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/AUTOSAR/Actuator</TARGET-COMPONENT-REF>
+                                    </COMPONENT-IREF>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/Components/Hardware/untitled_IB/RE_Hardware_MainFunction</EXECUTABLE-REF>
+                                    <SUCCESSOR-REFS>
+                                        <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/AUTOSAR_timing/EOC/Sensor_RE_Sensor_MainFunction</SUCCESSOR-REF>
+                                    </SUCCESSOR-REFS>
+                                </EOC-EXECUTABLE-ENTITY-REF>
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="d173b3b4-37e1-5b9e-f0ac-90f614313c84">
+                                    <SHORT-NAME>Sensor_RE_Sensor_MainFunction</SHORT-NAME>
+                                    <COMPONENT-IREF>
+                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/AUTOSAR/Sensor</TARGET-COMPONENT-REF>
+                                    </COMPONENT-IREF>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/Components/Sensor/Sensor_IB/RE_Sensor_MainFunction</EXECUTABLE-REF>
+                                </EOC-EXECUTABLE-ENTITY-REF>
+                            </ORDERED-ELEMENTS>
+                        </EXECUTION-ORDER-CONSTRAINT>
+                    </TIMING-REQUIREMENTS>
+                    <COMPONENT-REF DEST="COMPOSITION-SW-COMPONENT-TYPE">/Components/AUTOSAR</COMPONENT-REF>
+                </VFB-TIMING>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

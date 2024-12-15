@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model Sensor
-Model version                : 1.8
+Model version                : 1.9
 Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
-XML source code generated on : Sun Dec 15 07:03:26 2024
-Model Checksum               : 3325450459 80484755 2353291990 185199620
+XML source code generated on : Sun Dec 15 18:15:23 2024
+Model Checksum               : 3483413002 267795220 950201255 3964233193
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
     <AR-PACKAGES>
@@ -40,7 +40,7 @@ Model Checksum               : 3325450459 80484755 2353291990 185199620
                             <RESOURCE-CONSUMPTION>
                                 <SHORT-NAME>RsrcCons_Sensor</SHORT-NAME>
                             </RESOURCE-CONSUMPTION>
-                            <SW-VERSION>1.8.1</SW-VERSION>
+                            <SW-VERSION>1.9.1</SW-VERSION>
                             <USED-CODE-GENERATOR>Embedded Coder 7.10 (R2023a) 19-Nov-2022</USED-CODE-GENERATOR>
                             <VENDOR-ID>0</VENDOR-ID>
                             <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/Components/Sensor/Sensor_IB</BEHAVIOR-REF>

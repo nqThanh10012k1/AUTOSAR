@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Auto generated XML Component Description for model Sensor
-Model version                : 1.8
+Auto generated XML Component Description for model AUTOSAR
+Model version                : 1.4
 Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
-XML source code generated on : Sun Dec 15 07:03:26 2024
-Model Checksum               : 3325450459 80484755 2353291990 185199620
+XML source code generated on : Sun Dec 15 18:15:28 2024
+Model Checksum               : 4142415819 2990702679 1987836130 957988391
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
     <AR-PACKAGES>

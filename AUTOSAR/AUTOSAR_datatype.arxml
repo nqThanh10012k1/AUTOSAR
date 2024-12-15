@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Auto generated XML Component Description for model Hardware
-Model version                : 1.3
+Auto generated XML Component Description for model AUTOSAR
+Model version                : 1.4
 Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
-XML source code generated on : Sun Dec 15 07:41:25 2024
-Model Checksum               : 3645575508 1268800914 2482691342 559668150
+XML source code generated on : Sun Dec 15 18:15:28 2024
+Model Checksum               : 4142415819 2990702679 1987836130 957988391
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
     <AR-PACKAGES>
         <AR-PACKAGE>
             <SHORT-NAME>DataTypes</SHORT-NAME>
             <ELEMENTS>
-                <IMPLEMENTATION-DATA-TYPE UUID="665605a8-ec63-5b11-0219-5c1754ae411c">
+                <IMPLEMENTATION-DATA-TYPE UUID="fb1aa151-63bd-5841-a88f-edb7cff36503">
                     <SHORT-NAME>UInt16</SHORT-NAME>
                     <CATEGORY>VALUE</CATEGORY>
                     <SW-DATA-DEF-PROPS>
@@ -22,13 +22,13 @@ Model Checksum               : 3645575508 1268800914 2482691342 559668150
                         </SW-DATA-DEF-PROPS-VARIANTS>
                     </SW-DATA-DEF-PROPS>
                 </IMPLEMENTATION-DATA-TYPE>
-                <IMPLEMENTATION-DATA-TYPE UUID="05f511c8-1bb6-527a-988d-198389932136">
-                    <SHORT-NAME>Double</SHORT-NAME>
+                <IMPLEMENTATION-DATA-TYPE UUID="f5d25628-9cb5-5ce9-50f6-13de57d16387">
+                    <SHORT-NAME>UInt8</SHORT-NAME>
                     <CATEGORY>VALUE</CATEGORY>
                     <SW-DATA-DEF-PROPS>
                         <SW-DATA-DEF-PROPS-VARIANTS>
                             <SW-DATA-DEF-PROPS-CONDITIONAL>
-                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/float64</BASE-TYPE-REF>
+                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/DataTypes/SwBaseTypes/uint8</BASE-TYPE-REF>
                             </SW-DATA-DEF-PROPS-CONDITIONAL>
                         </SW-DATA-DEF-PROPS-VARIANTS>
                     </SW-DATA-DEF-PROPS>
@@ -38,15 +38,15 @@ Model Checksum               : 3645575508 1268800914 2482691342 559668150
                 <AR-PACKAGE>
                     <SHORT-NAME>SwAddrMethods</SHORT-NAME>
                     <ELEMENTS>
-                        <SW-ADDR-METHOD UUID="97fb2a26-eb76-5bdf-f55c-b19ad537edae">
+                        <SW-ADDR-METHOD UUID="15566195-4405-5330-63a5-3f2df9630386">
                             <SHORT-NAME>CODE</SHORT-NAME>
                             <SECTION-TYPE>CODE</SECTION-TYPE>
                         </SW-ADDR-METHOD>
-                        <SW-ADDR-METHOD UUID="b5886aaa-0eb6-50a9-4bde-6fd6fd420b31">
+                        <SW-ADDR-METHOD UUID="af5ca6c2-c15f-5a7d-12c7-13c15a678ce8">
                             <SHORT-NAME>CONST</SHORT-NAME>
                             <SECTION-TYPE>CONST</SECTION-TYPE>
                         </SW-ADDR-METHOD>
-                        <SW-ADDR-METHOD UUID="08929a89-a306-5899-3b27-81ba50cfb138">
+                        <SW-ADDR-METHOD UUID="9e6f0d62-4d8b-5b29-8d11-99e5f41adea0">
                             <SHORT-NAME>VAR</SHORT-NAME>
                             <SECTION-TYPE>VAR</SECTION-TYPE>
                         </SW-ADDR-METHOD>
@@ -55,19 +55,19 @@ Model Checksum               : 3645575508 1268800914 2482691342 559668150
                 <AR-PACKAGE>
                     <SHORT-NAME>SwBaseTypes</SHORT-NAME>
                     <ELEMENTS>
-                        <SW-BASE-TYPE UUID="85c09cb0-08a9-5e00-b3c7-96788c286007">
+                        <SW-BASE-TYPE UUID="8a7239e7-255c-5fc4-e3ae-92e606f362ab">
                             <SHORT-NAME>uint16</SHORT-NAME>
                             <CATEGORY>FIXED_LENGTH</CATEGORY>
                             <BASE-TYPE-SIZE>16</BASE-TYPE-SIZE>
                             <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
                             <NATIVE-DECLARATION>uint16</NATIVE-DECLARATION>
                         </SW-BASE-TYPE>
-                        <SW-BASE-TYPE UUID="e6ef67c1-bf75-543e-2630-a54bbb44f678">
-                            <SHORT-NAME>float64</SHORT-NAME>
+                        <SW-BASE-TYPE UUID="7ba10b13-d90b-59bc-fe82-fd49cc820b72">
+                            <SHORT-NAME>uint8</SHORT-NAME>
                             <CATEGORY>FIXED_LENGTH</CATEGORY>
-                            <BASE-TYPE-SIZE>64</BASE-TYPE-SIZE>
-                            <BASE-TYPE-ENCODING>IEEE754</BASE-TYPE-ENCODING>
-                            <NATIVE-DECLARATION>float64</NATIVE-DECLARATION>
+                            <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>uint8</NATIVE-DECLARATION>
                         </SW-BASE-TYPE>
                     </ELEMENTS>
                 </AR-PACKAGE>

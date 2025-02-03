@@ -1,109 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Auto generated XML Component Description for model Hardware
-Model version                : 1.25
+Auto generated XML Component Description for model untitled
+Model version                : 1.0
 Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
-XML source code generated on : Sun Dec 15 18:15:02 2024
-Model Checksum               : 561782670 183908824 3485041755 1536998117
+XML source code generated on : Tue Feb 04 01:26:40 2025
+Model Checksum               : 175731875 3438191285 1488249458 648841618
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
     <AR-PACKAGES>
         <AR-PACKAGE>
             <SHORT-NAME>Components</SHORT-NAME>
             <ELEMENTS>
-                <ECU-ABSTRACTION-SW-COMPONENT-TYPE UUID="408ea3a1-5533-5ebe-ade2-65f2b6f8c68e">
-                    <SHORT-NAME>Hardware</SHORT-NAME>
+                <APPLICATION-SW-COMPONENT-TYPE UUID="9e4e6555-e58a-5603-c9fb-df05c458fc64">
+                    <SHORT-NAME>E2E</SHORT-NAME>
                     <PORTS>
-                        <R-PORT-PROTOTYPE UUID="883d6ac8-fcda-5f8f-66ad-ed5ef8ff6141">
-                            <SHORT-NAME>PP_Sensor_Tmp</SHORT-NAME>
+                        <R-PORT-PROTOTYPE UUID="cab5b297-770e-5efa-f98a-12ecb4bca714">
+                            <SHORT-NAME>RPort</SHORT-NAME>
                             <REQUIRED-COM-SPECS>
                                 <NONQUEUED-RECEIVER-COM-SPEC>
-                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/SRIF_Sensor_Tmp/Tmp_Value</DATA-ELEMENT-REF>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/RPort/In2</DATA-ELEMENT-REF>
                                     <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
-                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <USES-END-TO-END-PROTECTION>true</USES-END-TO-END-PROTECTION>
                                     <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
                                     <ENABLE-UPDATE>false</ENABLE-UPDATE>
                                     <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
                                     <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
                                     <INIT-VALUE>
                                         <NUMERICAL-VALUE-SPECIFICATION>
-                                            <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
+                                            <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
                                             <VALUE>0</VALUE>
                                         </NUMERICAL-VALUE-SPECIFICATION>
                                     </INIT-VALUE>
                                 </NONQUEUED-RECEIVER-COM-SPEC>
                             </REQUIRED-COM-SPECS>
-                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/SRIF_Sensor_Tmp</REQUIRED-INTERFACE-TREF>
+                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/RPort</REQUIRED-INTERFACE-TREF>
                         </R-PORT-PROTOTYPE>
-                        <P-PORT-PROTOTYPE UUID="d7ddbf8d-521c-5ab2-ec08-47c34f1fc409">
-                            <SHORT-NAME>RP_Sensor_Adc</SHORT-NAME>
+                        <P-PORT-PROTOTYPE UUID="2f165f3b-3c0c-57a3-f610-50da1eab5d67">
+                            <SHORT-NAME>PPort</SHORT-NAME>
                             <PROVIDED-COM-SPECS>
                                 <NONQUEUED-SENDER-COM-SPEC>
-                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/SRIF_Sensor_Adc/Adc_Value</DATA-ELEMENT-REF>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/PPort/Out2</DATA-ELEMENT-REF>
                                     <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
-                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <USES-END-TO-END-PROTECTION>true</USES-END-TO-END-PROTECTION>
                                     <INIT-VALUE>
                                         <NUMERICAL-VALUE-SPECIFICATION>
-                                            <SHORT-LABEL>DefaultInitValue_UInt16</SHORT-LABEL>
+                                            <SHORT-LABEL>DefaultInitValue_Double</SHORT-LABEL>
                                             <VALUE>0</VALUE>
                                         </NUMERICAL-VALUE-SPECIFICATION>
                                     </INIT-VALUE>
                                 </NONQUEUED-SENDER-COM-SPEC>
                             </PROVIDED-COM-SPECS>
-                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/SRIF_Sensor_Adc</PROVIDED-INTERFACE-TREF>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/PPort</PROVIDED-INTERFACE-TREF>
                         </P-PORT-PROTOTYPE>
                     </PORTS>
                     <INTERNAL-BEHAVIORS>
-                        <SWC-INTERNAL-BEHAVIOR UUID="ec75e769-3e15-5b38-b40f-15ce6008c46d">
+                        <SWC-INTERNAL-BEHAVIOR UUID="2140d605-7f16-5a2a-b657-dde7c1ae57c2">
                             <SHORT-NAME>untitled_IB</SHORT-NAME>
                             <EVENTS>
-                                <TIMING-EVENT UUID="71d5c247-25bf-5518-fc92-3f776f91ca83">
-                                    <SHORT-NAME>Event</SHORT-NAME>
-                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/Hardware/untitled_IB/RE_Hardware_MainFunction</START-ON-EVENT-REF>
+                                <TIMING-EVENT UUID="293306db-e4c8-56f4-397b-84ce83aa80c1">
+                                    <SHORT-NAME>Event_untitled_Step</SHORT-NAME>
+                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/E2E/untitled_IB/untitled_Step</START-ON-EVENT-REF>
                                     <PERIOD>0.01</PERIOD>
                                 </TIMING-EVENT>
                             </EVENTS>
                             <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
                             <RUNNABLES>
-                                <RUNNABLE-ENTITY UUID="10f985c5-a535-544d-8e81-a2cbbc15a646">
-                                    <SHORT-NAME>RE_Hardware_InitFunction</SHORT-NAME>
+                                <RUNNABLE-ENTITY UUID="e3ddee64-5902-5d35-ed7c-12820b63165a">
+                                    <SHORT-NAME>untitled_Init</SHORT-NAME>
                                     <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
                                     <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
-                                    <SYMBOL>RE_Hardware_InitFunction</SYMBOL>
+                                    <SYMBOL>untitled_Init</SYMBOL>
                                 </RUNNABLE-ENTITY>
-                                <RUNNABLE-ENTITY UUID="4ecd7e5b-98c4-5941-3303-7b0d7b25a99e">
-                                    <SHORT-NAME>RE_Hardware_MainFunction</SHORT-NAME>
+                                <RUNNABLE-ENTITY UUID="2f20280c-31bb-5844-1991-bfe11e54e285">
+                                    <SHORT-NAME>untitled_Step</SHORT-NAME>
                                     <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
                                     <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
-                                    <DATA-READ-ACCESSS>
-                                        <VARIABLE-ACCESS UUID="af250b86-382c-52d9-c9aa-eb2b386a8526">
-                                            <SHORT-NAME>IN_PP_Sensor_Tmp_Tmp_Value</SHORT-NAME>
+                                    <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                                        <VARIABLE-ACCESS UUID="dddbf88e-90d0-5d3b-5b76-89f136fd0876">
+                                            <SHORT-NAME>IN_RPort_In2</SHORT-NAME>
                                             <ACCESSED-VARIABLE>
                                                 <AUTOSAR-VARIABLE-IREF>
-                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/Hardware/PP_Sensor_Tmp</PORT-PROTOTYPE-REF>
-                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/SRIF_Sensor_Tmp/Tmp_Value</TARGET-DATA-PROTOTYPE-REF>
+                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Components/E2E/RPort</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/RPort/In2</TARGET-DATA-PROTOTYPE-REF>
                                                 </AUTOSAR-VARIABLE-IREF>
                                             </ACCESSED-VARIABLE>
                                         </VARIABLE-ACCESS>
-                                    </DATA-READ-ACCESSS>
-                                    <DATA-WRITE-ACCESSS>
-                                        <VARIABLE-ACCESS UUID="c6ac55b7-17a2-5acb-9ff8-e75af1512030">
-                                            <SHORT-NAME>OUT_RP_Sensor_Adc_Adc_Value</SHORT-NAME>
+                                    </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                                    <DATA-SEND-POINTS>
+                                        <VARIABLE-ACCESS UUID="6d0aafea-6792-5cd8-38a1-6dea0c5db433">
+                                            <SHORT-NAME>OUT_PPort_Out2</SHORT-NAME>
                                             <ACCESSED-VARIABLE>
                                                 <AUTOSAR-VARIABLE-IREF>
-                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/Hardware/RP_Sensor_Adc</PORT-PROTOTYPE-REF>
-                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/SRIF_Sensor_Adc/Adc_Value</TARGET-DATA-PROTOTYPE-REF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/E2E/PPort</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/PPort/Out2</TARGET-DATA-PROTOTYPE-REF>
                                                 </AUTOSAR-VARIABLE-IREF>
                                             </ACCESSED-VARIABLE>
                                         </VARIABLE-ACCESS>
-                                    </DATA-WRITE-ACCESSS>
-                                    <SYMBOL>RE_Hardware_MainFunction</SYMBOL>
+                                    </DATA-SEND-POINTS>
+                                    <SYMBOL>untitled_Step</SYMBOL>
                                 </RUNNABLE-ENTITY>
                             </RUNNABLES>
                             <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
                         </SWC-INTERNAL-BEHAVIOR>
                     </INTERNAL-BEHAVIORS>
-                </ECU-ABSTRACTION-SW-COMPONENT-TYPE>
+                </APPLICATION-SW-COMPONENT-TYPE>
             </ELEMENTS>
         </AR-PACKAGE>
     </AR-PACKAGES>

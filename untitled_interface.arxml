@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Auto generated XML Component Description for model AUTOSAR
-Model version                : 1.4
+Auto generated XML Component Description for model untitled
+Model version                : 1.0
 Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
-XML source code generated on : Sun Dec 15 18:15:28 2024
-Model Checksum               : 4142415819 2990702679 1987836130 957988391
+XML source code generated on : Tue Feb 04 01:26:40 2025
+Model Checksum               : 175731875 3438191285 1488249458 648841618
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
     <AR-PACKAGES>
         <AR-PACKAGE>
             <SHORT-NAME>Interfaces</SHORT-NAME>
             <ELEMENTS>
-                <SENDER-RECEIVER-INTERFACE UUID="38987a57-8b5f-5c61-e477-a20a4a5c35d6">
-                    <SHORT-NAME>SRIF_Sensor_Adc</SHORT-NAME>
+                <SENDER-RECEIVER-INTERFACE UUID="7c8a7332-3782-5f4a-caf9-705fab392ba2">
+                    <SHORT-NAME>RPort</SHORT-NAME>
                     <IS-SERVICE>false</IS-SERVICE>
                     <DATA-ELEMENTS>
-                        <VARIABLE-DATA-PROTOTYPE UUID="f4bbec81-2fac-5911-5ec6-c9fd2651908f">
-                            <SHORT-NAME>Adc_Value</SHORT-NAME>
+                        <VARIABLE-DATA-PROTOTYPE UUID="02d500dd-8df0-5053-783b-70d1b380a7cc">
+                            <SHORT-NAME>In2</SHORT-NAME>
                             <CATEGORY>VALUE</CATEGORY>
                             <SW-DATA-DEF-PROPS>
                                 <SW-DATA-DEF-PROPS-VARIANTS>
@@ -26,16 +26,16 @@ Model Checksum               : 4142415819 2990702679 1987836130 957988391
                                     </SW-DATA-DEF-PROPS-CONDITIONAL>
                                 </SW-DATA-DEF-PROPS-VARIANTS>
                             </SW-DATA-DEF-PROPS>
-                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/UInt16</TYPE-TREF>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/Double</TYPE-TREF>
                         </VARIABLE-DATA-PROTOTYPE>
                     </DATA-ELEMENTS>
                 </SENDER-RECEIVER-INTERFACE>
-                <SENDER-RECEIVER-INTERFACE UUID="eecc2ee3-889b-50ed-4cb2-b3f631f81c97">
-                    <SHORT-NAME>SRIF_Sensor_Tmp</SHORT-NAME>
+                <SENDER-RECEIVER-INTERFACE UUID="b4cb846c-9cad-5764-7761-fbabb4066b30">
+                    <SHORT-NAME>PPort</SHORT-NAME>
                     <IS-SERVICE>false</IS-SERVICE>
                     <DATA-ELEMENTS>
-                        <VARIABLE-DATA-PROTOTYPE UUID="a3d4a25f-d014-55b8-a6f7-e743102eaba3">
-                            <SHORT-NAME>Tmp_Value</SHORT-NAME>
+                        <VARIABLE-DATA-PROTOTYPE UUID="8c9e4ffe-6a9f-5cf5-3c20-323f70faa67d">
+                            <SHORT-NAME>Out2</SHORT-NAME>
                             <CATEGORY>VALUE</CATEGORY>
                             <SW-DATA-DEF-PROPS>
                                 <SW-DATA-DEF-PROPS-VARIANTS>
@@ -45,7 +45,7 @@ Model Checksum               : 4142415819 2990702679 1987836130 957988391
                                     </SW-DATA-DEF-PROPS-CONDITIONAL>
                                 </SW-DATA-DEF-PROPS-VARIANTS>
                             </SW-DATA-DEF-PROPS>
-                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/UInt8</TYPE-TREF>
+                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/Double</TYPE-TREF>
                         </VARIABLE-DATA-PROTOTYPE>
                     </DATA-ELEMENTS>
                 </SENDER-RECEIVER-INTERFACE>

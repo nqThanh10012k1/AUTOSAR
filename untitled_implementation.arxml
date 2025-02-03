@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Auto generated XML Component Description for model Sensor
-Model version                : 1.9
+Auto generated XML Component Description for model untitled
+Model version                : 1.0
 Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
-XML source code generated on : Sun Dec 15 18:15:23 2024
-Model Checksum               : 3483413002 267795220 950201255 3964233193
+XML source code generated on : Tue Feb 04 01:26:40 2025
+Model Checksum               : 175731875 3438191285 1488249458 648841618
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
     <AR-PACKAGES>
@@ -15,22 +15,30 @@ Model Checksum               : 3483413002 267795220 950201255 3964233193
                 <AR-PACKAGE>
                     <SHORT-NAME>SwcImplementations</SHORT-NAME>
                     <ELEMENTS>
-                        <SWC-IMPLEMENTATION UUID="0507ead3-6eba-518d-6319-653e13106460">
-                            <SHORT-NAME>Sensor_Impl</SHORT-NAME>
+                        <SWC-IMPLEMENTATION UUID="501d2ad0-52cc-561d-628b-34e323476c4d">
+                            <SHORT-NAME>untitled_Impl</SHORT-NAME>
                             <CODE-DESCRIPTORS>
                                 <CODE>
                                     <SHORT-NAME>Code</SHORT-NAME>
                                     <ARTIFACT-DESCRIPTORS>
                                         <AUTOSAR-ENGINEERING-OBJECT>
-                                            <SHORT-LABEL>Sensor_c</SHORT-LABEL>
+                                            <SHORT-LABEL>untitled_c</SHORT-LABEL>
                                             <CATEGORY>SWSRC</CATEGORY>
                                         </AUTOSAR-ENGINEERING-OBJECT>
                                         <AUTOSAR-ENGINEERING-OBJECT>
-                                            <SHORT-LABEL>Sensor_h</SHORT-LABEL>
+                                            <SHORT-LABEL>rtwtypes_h</SHORT-LABEL>
                                             <CATEGORY>SWHDR</CATEGORY>
                                         </AUTOSAR-ENGINEERING-OBJECT>
                                         <AUTOSAR-ENGINEERING-OBJECT>
-                                            <SHORT-LABEL>rtwtypes_h</SHORT-LABEL>
+                                            <SHORT-LABEL>untitled_h</SHORT-LABEL>
+                                            <CATEGORY>SWHDR</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>untitled_private_h</SHORT-LABEL>
+                                            <CATEGORY>SWHDR</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>untitled_types_h</SHORT-LABEL>
                                             <CATEGORY>SWHDR</CATEGORY>
                                         </AUTOSAR-ENGINEERING-OBJECT>
                                     </ARTIFACT-DESCRIPTORS>
@@ -38,12 +46,12 @@ Model Checksum               : 3483413002 267795220 950201255 3964233193
                             </CODE-DESCRIPTORS>
                             <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
                             <RESOURCE-CONSUMPTION>
-                                <SHORT-NAME>RsrcCons_Sensor</SHORT-NAME>
+                                <SHORT-NAME>RsrcCons_untitled</SHORT-NAME>
                             </RESOURCE-CONSUMPTION>
-                            <SW-VERSION>1.9.1</SW-VERSION>
+                            <SW-VERSION>1.0.1</SW-VERSION>
                             <USED-CODE-GENERATOR>Embedded Coder 7.10 (R2023a) 19-Nov-2022</USED-CODE-GENERATOR>
                             <VENDOR-ID>0</VENDOR-ID>
-                            <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/Components/Sensor/Sensor_IB</BEHAVIOR-REF>
+                            <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/Components/E2E/untitled_IB</BEHAVIOR-REF>
                         </SWC-IMPLEMENTATION>
                     </ELEMENTS>
                 </AR-PACKAGE>

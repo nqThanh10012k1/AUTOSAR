@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model E2E_Sender
-Model version                : 1.3
+Model version                : 1.4
 Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
-XML source code generated on : Tue Feb 04 03:19:07 2025
-Model Checksum               : 661998896 3374827068 1222666726 2155102886
+XML source code generated on : Tue Feb 04 03:36:32 2025
+Model Checksum               : 3781449894 1075838902 345565415 568836312
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
     <AR-PACKAGES>
@@ -20,7 +20,7 @@ Model Checksum               : 661998896 3374827068 1222666726 2155102886
                                 <NONQUEUED-SENDER-COM-SPEC>
                                     <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/SRIF_Data/Data</DATA-ELEMENT-REF>
                                     <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
-                                    <USES-END-TO-END-PROTECTION>true</USES-END-TO-END-PROTECTION>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
                                     <INIT-VALUE>
                                         <NUMERICAL-VALUE-SPECIFICATION>
                                             <SHORT-LABEL>DefaultInitValue_uint8</SHORT-LABEL>

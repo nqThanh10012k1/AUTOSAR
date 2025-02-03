@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model E2E_Receiver
-Model version                : 1.4
+Model version                : 1.5
 Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
-XML source code generated on : Tue Feb 04 03:19:04 2025
-Model Checksum               : 64572145 1634589903 1011677196 1506251787
+XML source code generated on : Tue Feb 04 03:36:28 2025
+Model Checksum               : 2335653317 771333055 100314334 272601254
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
     <AR-PACKAGES>
@@ -20,7 +20,7 @@ Model Checksum               : 64572145 1634589903 1011677196 1506251787
                                 <NONQUEUED-RECEIVER-COM-SPEC>
                                     <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/SRIF_Data/Data</DATA-ELEMENT-REF>
                                     <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
-                                    <USES-END-TO-END-PROTECTION>true</USES-END-TO-END-PROTECTION>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
                                     <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
                                     <ENABLE-UPDATE>false</ENABLE-UPDATE>
                                     <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
@@ -59,7 +59,7 @@ Model Checksum               : 64572145 1634589903 1011677196 1506251787
                                     <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
                                     <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
                                     <DATA-RECEIVE-POINT-BY-ARGUMENTS>
-                                        <VARIABLE-ACCESS UUID="a37e952f-bfe4-55b4-9d10-e6eb7b26f117">
+                                        <VARIABLE-ACCESS UUID="a0c00407-9fb0-543d-59d4-7c3b92769daf">
                                             <SHORT-NAME>IN_RP_Data_Data</SHORT-NAME>
                                             <ACCESSED-VARIABLE>
                                                 <AUTOSAR-VARIABLE-IREF>

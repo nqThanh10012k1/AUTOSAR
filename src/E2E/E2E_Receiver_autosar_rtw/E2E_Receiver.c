@@ -3,9 +3,9 @@
  *
  * Code generated for Simulink model 'E2E_Receiver'.
  *
- * Model version                  : 1.4
+ * Model version                  : 1.5
  * Simulink Coder version         : 9.9 (R2023a) 19-Nov-2022
- * C/C++ source code generated on : Tue Feb  4 03:19:01 2025
+ * C/C++ source code generated on : Tue Feb  4 03:36:26 2025
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -24,15 +24,12 @@ void E2E_Receiver_MainFunction(void)
   /* DataStoreWrite: '<Root>/Data Store Write' incorporates:
    *  Inport: '<Root>/Inport'
    */
-  (void)E2EPW_Read_RP_Data_Data(&E2E_Receiver_ARID_DEF.Data);
+  (void)Rte_Read_RP_Data_Data(&E2E_Receiver_ARID_DEF.Data);
 }
 
 /* Model initialize function */
 void E2E_Receiver_Init(void)
 {
-  /* End-to-End (E2E) Protection Wrapper initialization */
-  E2EPW_ReadInit_RP_Data_Data();
-
   /* (no initialization code required) */
 }
 

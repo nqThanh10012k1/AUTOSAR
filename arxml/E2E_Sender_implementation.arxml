@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Auto generated XML Component Description for model untitled
-Model version                : 1.0
+Auto generated XML Component Description for model E2E_Sender
+Model version                : 1.3
 Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
-XML source code generated on : Tue Feb 04 01:26:40 2025
-Model Checksum               : 175731875 3438191285 1488249458 648841618
+XML source code generated on : Tue Feb 04 03:19:07 2025
+Model Checksum               : 661998896 3374827068 1222666726 2155102886
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
     <AR-PACKAGES>
@@ -15,30 +15,34 @@ Model Checksum               : 175731875 3438191285 1488249458 648841618
                 <AR-PACKAGE>
                     <SHORT-NAME>SwcImplementations</SHORT-NAME>
                     <ELEMENTS>
-                        <SWC-IMPLEMENTATION UUID="501d2ad0-52cc-561d-628b-34e323476c4d">
-                            <SHORT-NAME>untitled_Impl</SHORT-NAME>
+                        <SWC-IMPLEMENTATION UUID="6caa23e4-e75e-5562-1f00-c10f1fc02f7f">
+                            <SHORT-NAME>E2E_Sender_Impl</SHORT-NAME>
                             <CODE-DESCRIPTORS>
                                 <CODE>
                                     <SHORT-NAME>Code</SHORT-NAME>
                                     <ARTIFACT-DESCRIPTORS>
                                         <AUTOSAR-ENGINEERING-OBJECT>
-                                            <SHORT-LABEL>untitled_c</SHORT-LABEL>
+                                            <SHORT-LABEL>E2E_Sender_c</SHORT-LABEL>
                                             <CATEGORY>SWSRC</CATEGORY>
                                         </AUTOSAR-ENGINEERING-OBJECT>
                                         <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>E2E_Sender_data_c</SHORT-LABEL>
+                                            <CATEGORY>SWSRC</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>E2E_Sender_h</SHORT-LABEL>
+                                            <CATEGORY>SWHDR</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>E2E_Sender_private_h</SHORT-LABEL>
+                                            <CATEGORY>SWHDR</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>E2E_Sender_types_h</SHORT-LABEL>
+                                            <CATEGORY>SWHDR</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
                                             <SHORT-LABEL>rtwtypes_h</SHORT-LABEL>
-                                            <CATEGORY>SWHDR</CATEGORY>
-                                        </AUTOSAR-ENGINEERING-OBJECT>
-                                        <AUTOSAR-ENGINEERING-OBJECT>
-                                            <SHORT-LABEL>untitled_h</SHORT-LABEL>
-                                            <CATEGORY>SWHDR</CATEGORY>
-                                        </AUTOSAR-ENGINEERING-OBJECT>
-                                        <AUTOSAR-ENGINEERING-OBJECT>
-                                            <SHORT-LABEL>untitled_private_h</SHORT-LABEL>
-                                            <CATEGORY>SWHDR</CATEGORY>
-                                        </AUTOSAR-ENGINEERING-OBJECT>
-                                        <AUTOSAR-ENGINEERING-OBJECT>
-                                            <SHORT-LABEL>untitled_types_h</SHORT-LABEL>
                                             <CATEGORY>SWHDR</CATEGORY>
                                         </AUTOSAR-ENGINEERING-OBJECT>
                                     </ARTIFACT-DESCRIPTORS>
@@ -46,12 +50,12 @@ Model Checksum               : 175731875 3438191285 1488249458 648841618
                             </CODE-DESCRIPTORS>
                             <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
                             <RESOURCE-CONSUMPTION>
-                                <SHORT-NAME>RsrcCons_untitled</SHORT-NAME>
+                                <SHORT-NAME>RsrcCons_E2E_Sender</SHORT-NAME>
                             </RESOURCE-CONSUMPTION>
-                            <SW-VERSION>1.0.1</SW-VERSION>
+                            <SW-VERSION>1.3.1</SW-VERSION>
                             <USED-CODE-GENERATOR>Embedded Coder 7.10 (R2023a) 19-Nov-2022</USED-CODE-GENERATOR>
                             <VENDOR-ID>0</VENDOR-ID>
-                            <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/Components/E2E/untitled_IB</BEHAVIOR-REF>
+                            <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/Components/E2E_Sender/E2E_Sender_IB</BEHAVIOR-REF>
                         </SWC-IMPLEMENTATION>
                     </ELEMENTS>
                 </AR-PACKAGE>

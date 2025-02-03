@@ -1,8 +1,0 @@
-#C:\Users\PC\Documents\SIMULINK\AUTOSAR\E2E\untitled_autosar_rtw\stub\Rte_E2E.h
-#this file contains the list of RTE methods that the profiling must filter out
--E2EPW_Read_RPort_In2
--Rte_IStatus_untitled_Step_RPort_In2
--E2EPW_ReadInit_RPort_In2
--E2EPW_Write_PPort_Out2
--Rte_Invalidate_PPort_Out2
--E2EPW_WriteInit_PPort_Out2

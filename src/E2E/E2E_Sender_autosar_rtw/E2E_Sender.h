@@ -1,11 +1,11 @@
 /*
- * File: untitled.h
+ * File: E2E_Sender.h
  *
- * Code generated for Simulink model 'untitled'.
+ * Code generated for Simulink model 'E2E_Sender'.
  *
- * Model version                  : 1.0
+ * Model version                  : 1.2
  * Simulink Coder version         : 9.9 (R2023a) 19-Nov-2022
- * C/C++ source code generated on : Tue Feb  4 01:26:32 2025
+ * C/C++ source code generated on : Tue Feb  4 03:08:46 2025
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -13,15 +13,22 @@
  * Validation result: Not run
  */
 
-#ifndef RTW_HEADER_untitled_h_
-#define RTW_HEADER_untitled_h_
-#ifndef untitled_COMMON_INCLUDES_
-#define untitled_COMMON_INCLUDES_
+#ifndef RTW_HEADER_E2E_Sender_h_
+#define RTW_HEADER_E2E_Sender_h_
+#ifndef E2E_Sender_COMMON_INCLUDES_
+#define E2E_Sender_COMMON_INCLUDES_
 #include "rtwtypes.h"
-#include "Rte_E2E.h"
-#endif                                 /* untitled_COMMON_INCLUDES_ */
+#include "Rte_E2E_Sender.h"
+#endif                                 /* E2E_Sender_COMMON_INCLUDES_ */
 
-#include "untitled_types.h"
+#include "E2E_Sender_types.h"
+
+/* Invariant block signals (default storage) */
+typedef struct {
+  uint8 Constant;                      /* '<Root>/Constant' */
+} ConstB_E2E_Sender_T;
+
+extern const ConstB_E2E_Sender_T E2E_Sender_ConstB;/* constant block i/o */
 
 /*-
  * The generated code includes comments that allow you to trace directly
@@ -37,16 +44,9 @@
  *
  * Here is the system hierarchy for this model
  *
- * '<Root>' : 'untitled'
- * '<S1>'   : 'untitled/Runnable_10ms'
- * '<S2>'   : 'untitled/Runnable_Initialize'
+ * '<Root>' : 'E2E_Sender'
  */
-
-/*-
- * Requirements for '<Root>': untitled
-
- */
-#endif                                 /* RTW_HEADER_untitled_h_ */
+#endif                                 /* RTW_HEADER_E2E_Sender_h_ */
 
 /*
  * File trailer for generated code.

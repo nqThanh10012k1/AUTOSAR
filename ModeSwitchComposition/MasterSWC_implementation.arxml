@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Auto generated XML Component Description for model E2E_Receiver
-Model version                : 1.5
+Auto generated XML Component Description for model MasterSWC
+Model version                : 1.6
 Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
-XML source code generated on : Tue Feb 04 03:36:28 2025
-Model Checksum               : 2335653317 771333055 100314334 272601254
+XML source code generated on : Fri Mar 21 18:11:48 2025
+Model Checksum               : 748272592 4075537923 1419395214 293998373
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
     <AR-PACKAGES>
@@ -15,26 +15,30 @@ Model Checksum               : 2335653317 771333055 100314334 272601254
                 <AR-PACKAGE>
                     <SHORT-NAME>SwcImplementations</SHORT-NAME>
                     <ELEMENTS>
-                        <SWC-IMPLEMENTATION UUID="3c788e40-3a03-5fd4-e9f6-6e52b62572f2">
-                            <SHORT-NAME>E2E_Receiver_Impl</SHORT-NAME>
+                        <SWC-IMPLEMENTATION UUID="3a290ff0-36d9-5a7b-b7a6-953ad63ad709">
+                            <SHORT-NAME>MasterSWC_Impl</SHORT-NAME>
                             <CODE-DESCRIPTORS>
                                 <CODE>
                                     <SHORT-NAME>Code</SHORT-NAME>
                                     <ARTIFACT-DESCRIPTORS>
                                         <AUTOSAR-ENGINEERING-OBJECT>
-                                            <SHORT-LABEL>E2E_Receiver_c</SHORT-LABEL>
+                                            <SHORT-LABEL>MasterSWC_c</SHORT-LABEL>
                                             <CATEGORY>SWSRC</CATEGORY>
                                         </AUTOSAR-ENGINEERING-OBJECT>
                                         <AUTOSAR-ENGINEERING-OBJECT>
-                                            <SHORT-LABEL>E2E_Receiver_h</SHORT-LABEL>
+                                            <SHORT-LABEL>MasterSWC_data_c</SHORT-LABEL>
+                                            <CATEGORY>SWSRC</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>MasterSWC_h</SHORT-LABEL>
                                             <CATEGORY>SWHDR</CATEGORY>
                                         </AUTOSAR-ENGINEERING-OBJECT>
                                         <AUTOSAR-ENGINEERING-OBJECT>
-                                            <SHORT-LABEL>E2E_Receiver_private_h</SHORT-LABEL>
+                                            <SHORT-LABEL>MasterSWC_private_h</SHORT-LABEL>
                                             <CATEGORY>SWHDR</CATEGORY>
                                         </AUTOSAR-ENGINEERING-OBJECT>
                                         <AUTOSAR-ENGINEERING-OBJECT>
-                                            <SHORT-LABEL>E2E_Receiver_types_h</SHORT-LABEL>
+                                            <SHORT-LABEL>MasterSWC_types_h</SHORT-LABEL>
                                             <CATEGORY>SWHDR</CATEGORY>
                                         </AUTOSAR-ENGINEERING-OBJECT>
                                         <AUTOSAR-ENGINEERING-OBJECT>
@@ -46,12 +50,12 @@ Model Checksum               : 2335653317 771333055 100314334 272601254
                             </CODE-DESCRIPTORS>
                             <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
                             <RESOURCE-CONSUMPTION>
-                                <SHORT-NAME>RsrcCons_E2E_Receiver</SHORT-NAME>
+                                <SHORT-NAME>RsrcCons_MasterSWC</SHORT-NAME>
                             </RESOURCE-CONSUMPTION>
-                            <SW-VERSION>1.5.1</SW-VERSION>
+                            <SW-VERSION>1.6.1</SW-VERSION>
                             <USED-CODE-GENERATOR>Embedded Coder 7.10 (R2023a) 19-Nov-2022</USED-CODE-GENERATOR>
                             <VENDOR-ID>0</VENDOR-ID>
-                            <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/Components/E2E_Receiver/E2E_Receiver_IB</BEHAVIOR-REF>
+                            <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/Components/MasterSWC/MasterSWC_IB</BEHAVIOR-REF>
                         </SWC-IMPLEMENTATION>
                     </ELEMENTS>
                 </AR-PACKAGE>

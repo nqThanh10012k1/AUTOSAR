@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model ModeSwitchComposition
+Model version                : 1.9
+Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
+XML source code generated on : Fri Mar 21 18:11:51 2025
+Model Checksum               : 1714386662 149800926 2523537586 2118801248
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Timing</SHORT-NAME>
+            <ELEMENTS>
+                <VFB-TIMING UUID="cfafb874-df31-5ed3-e733-505fba940664">
+                    <SHORT-NAME>ModeSwitchComposition_timing</SHORT-NAME>
+                    <TIMING-REQUIREMENTS>
+                        <EXECUTION-ORDER-CONSTRAINT UUID="50d34501-ccc2-5218-09a8-4e9e2de894f2">
+                            <SHORT-NAME>EOC</SHORT-NAME>
+                            <BASE-COMPOSITION-REF DEST="COMPOSITION-SW-COMPONENT-TYPE">/Components/ModeSwitchComposition</BASE-COMPOSITION-REF>
+                            <ORDERED-ELEMENTS>
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="2fbb00a9-2669-5256-6802-f6c5a6d053be">
+                                    <SHORT-NAME>SlaveSWC_MasterSWC_Run</SHORT-NAME>
+                                    <COMPONENT-IREF>
+                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/ModeSwitchComposition/SlaveSWC</TARGET-COMPONENT-REF>
+                                    </COMPONENT-IREF>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/Components/SlaveSWC/MasterSWC_IB/MasterSWC_Run</EXECUTABLE-REF>
+                                    <SUCCESSOR-REFS>
+                                        <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ModeSwitchComposition_timing/EOC/SlaveSWC_MasterSWC_Step</SUCCESSOR-REF>
+                                    </SUCCESSOR-REFS>
+                                </EOC-EXECUTABLE-ENTITY-REF>
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="6fd060fc-78a0-50db-44df-665bdc826e78">
+                                    <SHORT-NAME>SlaveSWC_MasterSWC_Step</SHORT-NAME>
+                                    <COMPONENT-IREF>
+                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/ModeSwitchComposition/SlaveSWC</TARGET-COMPONENT-REF>
+                                    </COMPONENT-IREF>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/Components/SlaveSWC/MasterSWC_IB/MasterSWC_Step</EXECUTABLE-REF>
+                                    <SUCCESSOR-REFS>
+                                        <SUCCESSOR-REF DEST="EOC-EXECUTABLE-ENTITY-REF">/Timing/ModeSwitchComposition_timing/EOC/MasterSWC_SlaveSWC_Step</SUCCESSOR-REF>
+                                    </SUCCESSOR-REFS>
+                                </EOC-EXECUTABLE-ENTITY-REF>
+                                <EOC-EXECUTABLE-ENTITY-REF UUID="564ab84f-7d16-5145-a160-04ec6d0d5007">
+                                    <SHORT-NAME>MasterSWC_SlaveSWC_Step</SHORT-NAME>
+                                    <COMPONENT-IREF>
+                                        <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Components/ModeSwitchComposition/MasterSWC</TARGET-COMPONENT-REF>
+                                    </COMPONENT-IREF>
+                                    <EXECUTABLE-REF DEST="RUNNABLE-ENTITY">/Components/MasterSWC/MasterSWC_IB/SlaveSWC_Step</EXECUTABLE-REF>
+                                </EOC-EXECUTABLE-ENTITY-REF>
+                            </ORDERED-ELEMENTS>
+                        </EXECUTION-ORDER-CONSTRAINT>
+                    </TIMING-REQUIREMENTS>
+                    <COMPONENT-REF DEST="COMPOSITION-SW-COMPONENT-TYPE">/Components/ModeSwitchComposition</COMPONENT-REF>
+                </VFB-TIMING>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

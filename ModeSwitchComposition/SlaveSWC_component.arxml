@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model SlaveSWC
+Model version                : 1.14
+Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
+XML source code generated on : Fri Mar 21 18:11:50 2025
+Model Checksum               : 2244821935 1353772655 3707386847 1988428774
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Components</SHORT-NAME>
+            <ELEMENTS>
+                <APPLICATION-SW-COMPONENT-TYPE UUID="c31a3d96-0a2d-5135-2e56-7c76314162f5">
+                    <SHORT-NAME>SlaveSWC</SHORT-NAME>
+                    <PORTS>
+                        <P-PORT-PROTOTYPE UUID="3724399d-891e-5966-85f9-c0577ab82670">
+                            <SHORT-NAME>Outport</SHORT-NAME>
+                            <PROVIDED-COM-SPECS>
+                                <NONQUEUED-SENDER-COM-SPEC>
+                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Outport/Outport</DATA-ELEMENT-REF>
+                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                    <INIT-VALUE>
+                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                            <SHORT-LABEL>DefaultInitValue_UInt8</SHORT-LABEL>
+                                            <VALUE>0</VALUE>
+                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                    </INIT-VALUE>
+                                </NONQUEUED-SENDER-COM-SPEC>
+                            </PROVIDED-COM-SPECS>
+                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Interfaces/Outport</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                        <R-PORT-PROTOTYPE UUID="bca74de1-5dc0-5379-9761-2a72a47d0726">
+                            <SHORT-NAME>MRP_Ecu_Modes</SHORT-NAME>
+                            <REQUIRED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/Interfaces/MSIF_Ecu_Modes</REQUIRED-INTERFACE-TREF>
+                        </R-PORT-PROTOTYPE>
+                    </PORTS>
+                    <INTERNAL-BEHAVIORS>
+                        <SWC-INTERNAL-BEHAVIOR UUID="cd7d44ec-90bb-532a-5b5a-6637e351c82f">
+                            <SHORT-NAME>MasterSWC_IB</SHORT-NAME>
+                            <DATA-TYPE-MAPPING-REFS>
+                                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DataTypes/DataTypeMappings/MasterSWCDataTypeMappingsSet</DATA-TYPE-MAPPING-REF>
+                            </DATA-TYPE-MAPPING-REFS>
+                            <EVENTS>
+                                <TIMING-EVENT UUID="a23abc8a-f85a-5624-eea6-7a84330f68a4">
+                                    <SHORT-NAME>Event</SHORT-NAME>
+                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/SlaveSWC/MasterSWC_IB/MasterSWC_Step</START-ON-EVENT-REF>
+                                    <PERIOD>1</PERIOD>
+                                </TIMING-EVENT>
+                                <SWC-MODE-SWITCH-EVENT UUID="7e3a8ac0-bced-5ec0-68ff-b1ca768396c8">
+                                    <SHORT-NAME>Event_Run</SHORT-NAME>
+                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/SlaveSWC/MasterSWC_IB/MasterSWC_Run</START-ON-EVENT-REF>
+                                    <ACTIVATION>ON-ENTRY</ACTIVATION>
+                                    <MODE-IREFS>
+                                        <MODE-IREF>
+                                            <CONTEXT-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/SlaveSWC/MRP_Ecu_Modes</CONTEXT-PORT-REF>
+                                            <CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/Interfaces/MSIF_Ecu_Modes/MG_Ecu_Modes</CONTEXT-MODE-DECLARATION-GROUP-PROTOTYPE-REF>
+                                            <TARGET-MODE-DECLARATION-REF DEST="MODE-DECLARATION">/DataTypes/ModeDeclarationGroups/Ecu_Modes/INIT</TARGET-MODE-DECLARATION-REF>
+                                        </MODE-IREF>
+                                    </MODE-IREFS>
+                                </SWC-MODE-SWITCH-EVENT>
+                            </EVENTS>
+                            <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                            <RUNNABLES>
+                                <RUNNABLE-ENTITY UUID="4b87af6d-7378-53fb-8c14-6ab2da95b0b7">
+                                    <SHORT-NAME>MasterSWC_Step</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <DATA-WRITE-ACCESSS>
+                                        <VARIABLE-ACCESS UUID="f6196319-83a3-5862-c2bd-fd211c701c54">
+                                            <SHORT-NAME>OUT_Outport_Outport</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/SlaveSWC/Outport</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Outport/Outport</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-WRITE-ACCESSS>
+                                    <MODE-ACCESS-POINTS>
+                                        <MODE-ACCESS-POINT>
+                                            <MODE-GROUP-IREF>
+                                                <R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                                                    <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Components/SlaveSWC/MRP_Ecu_Modes</CONTEXT-R-PORT-REF>
+                                                    <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/Interfaces/MSIF_Ecu_Modes/MG_Ecu_Modes</TARGET-MODE-GROUP-REF>
+                                                </R-MODE-GROUP-IN-ATOMIC-SWC-INSTANCE-REF>
+                                            </MODE-GROUP-IREF>
+                                        </MODE-ACCESS-POINT>
+                                    </MODE-ACCESS-POINTS>
+                                    <SYMBOL>MasterSWC_Step</SYMBOL>
+                                </RUNNABLE-ENTITY>
+                                <RUNNABLE-ENTITY UUID="91994b5e-0e5d-5df6-689f-760d6ddef931">
+                                    <SHORT-NAME>MasterSWC_Init</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <DATA-WRITE-ACCESSS>
+                                        <VARIABLE-ACCESS UUID="9d568215-43cd-5ca3-5ce4-0aafb8b3b359">
+                                            <SHORT-NAME>OUT_Outport_Outport</SHORT-NAME>
+                                            <ACCESSED-VARIABLE>
+                                                <AUTOSAR-VARIABLE-IREF>
+                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Components/SlaveSWC/Outport</PORT-PROTOTYPE-REF>
+                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Interfaces/Outport/Outport</TARGET-DATA-PROTOTYPE-REF>
+                                                </AUTOSAR-VARIABLE-IREF>
+                                            </ACCESSED-VARIABLE>
+                                        </VARIABLE-ACCESS>
+                                    </DATA-WRITE-ACCESSS>
+                                    <SYMBOL>MasterSWC_Init</SYMBOL>
+                                </RUNNABLE-ENTITY>
+                                <RUNNABLE-ENTITY UUID="2aff36ef-fdb6-5739-a204-3b5637598dde">
+                                    <SHORT-NAME>MasterSWC_Run</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <SYMBOL>MasterSWC_Run</SYMBOL>
+                                </RUNNABLE-ENTITY>
+                            </RUNNABLES>
+                            <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                        </SWC-INTERNAL-BEHAVIOR>
+                    </INTERNAL-BEHAVIORS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

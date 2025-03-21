@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model MasterSWC
+Model version                : 1.6
+Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
+XML source code generated on : Fri Mar 21 18:11:48 2025
+Model Checksum               : 748272592 4075537923 1419395214 293998373
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Components</SHORT-NAME>
+            <ELEMENTS>
+                <APPLICATION-SW-COMPONENT-TYPE UUID="fe145e3a-c96a-5227-91d0-d60cd8d9638e">
+                    <SHORT-NAME>MasterSWC</SHORT-NAME>
+                    <PORTS>
+                        <P-PORT-PROTOTYPE UUID="bf7585d9-0d9d-5a5d-adcb-32702c9d4a29">
+                            <SHORT-NAME>MSP_Ecu_Modes</SHORT-NAME>
+                            <PROVIDED-INTERFACE-TREF DEST="MODE-SWITCH-INTERFACE">/Interfaces/MSIF_Ecu_Modes</PROVIDED-INTERFACE-TREF>
+                        </P-PORT-PROTOTYPE>
+                    </PORTS>
+                    <INTERNAL-BEHAVIORS>
+                        <SWC-INTERNAL-BEHAVIOR UUID="bb1c307d-e9b4-5f41-f57b-63fe2e571b09">
+                            <SHORT-NAME>MasterSWC_IB</SHORT-NAME>
+                            <DATA-TYPE-MAPPING-REFS>
+                                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/DataTypes/DataTypeMappings/MasterSWCDataTypeMappingsSet</DATA-TYPE-MAPPING-REF>
+                            </DATA-TYPE-MAPPING-REFS>
+                            <EVENTS>
+                                <TIMING-EVENT UUID="84c3b570-a98f-53c3-1c61-ba632d5676b6">
+                                    <SHORT-NAME>TE_SlaveSWC_Step</SHORT-NAME>
+                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/MasterSWC/MasterSWC_IB/SlaveSWC_Step</START-ON-EVENT-REF>
+                                    <PERIOD>1</PERIOD>
+                                </TIMING-EVENT>
+                            </EVENTS>
+                            <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                            <RUNNABLES>
+                                <RUNNABLE-ENTITY UUID="f77df636-c020-563c-be6a-5ee6ab26c341">
+                                    <SHORT-NAME>SlaveSWC_Init</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <MODE-SWITCH-POINTS>
+                                        <MODE-SWITCH-POINT UUID="791067c3-f4fa-5844-0b72-09ae3885d451">
+                                            <SHORT-NAME>OUT_MSP_Ecu_Modes_MG_Ecu_Modes</SHORT-NAME>
+                                            <MODE-GROUP-IREF>
+                                                <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Components/MasterSWC/MSP_Ecu_Modes</CONTEXT-P-PORT-REF>
+                                                <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/Interfaces/MSIF_Ecu_Modes/MG_Ecu_Modes</TARGET-MODE-GROUP-REF>
+                                            </MODE-GROUP-IREF>
+                                        </MODE-SWITCH-POINT>
+                                    </MODE-SWITCH-POINTS>
+                                    <SYMBOL>SlaveSWC_Init</SYMBOL>
+                                </RUNNABLE-ENTITY>
+                                <RUNNABLE-ENTITY UUID="a5a28ac4-0c32-560d-9bcc-b0df0c83db70">
+                                    <SHORT-NAME>SlaveSWC_Step</SHORT-NAME>
+                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                    <MODE-SWITCH-POINTS>
+                                        <MODE-SWITCH-POINT UUID="f1270f24-7ca5-54d6-1063-6904464b0ab4">
+                                            <SHORT-NAME>OUT_MSP_Ecu_Modes_MG_Ecu_Modes</SHORT-NAME>
+                                            <MODE-GROUP-IREF>
+                                                <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Components/MasterSWC/MSP_Ecu_Modes</CONTEXT-P-PORT-REF>
+                                                <TARGET-MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP-PROTOTYPE">/Interfaces/MSIF_Ecu_Modes/MG_Ecu_Modes</TARGET-MODE-GROUP-REF>
+                                            </MODE-GROUP-IREF>
+                                        </MODE-SWITCH-POINT>
+                                    </MODE-SWITCH-POINTS>
+                                    <SYMBOL>SlaveSWC_Step</SYMBOL>
+                                </RUNNABLE-ENTITY>
+                            </RUNNABLES>
+                            <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                        </SWC-INTERNAL-BEHAVIOR>
+                    </INTERNAL-BEHAVIORS>
+                </APPLICATION-SW-COMPONENT-TYPE>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

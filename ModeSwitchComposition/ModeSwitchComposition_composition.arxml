@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model ModeSwitchComposition
+Model version                : 1.9
+Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
+XML source code generated on : Fri Mar 21 18:11:51 2025
+Model Checksum               : 1714386662 149800926 2523537586 2118801248
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Components</SHORT-NAME>
+            <ELEMENTS>
+                <COMPOSITION-SW-COMPONENT-TYPE UUID="c56fefd3-f1f4-528b-d24e-b0a3cf8473c3">
+                    <SHORT-NAME>ModeSwitchComposition</SHORT-NAME>
+                    <COMPONENTS>
+                        <SW-COMPONENT-PROTOTYPE UUID="478b2d41-cf70-57b5-010c-0b1d92cef51f">
+                            <SHORT-NAME>MasterSWC</SHORT-NAME>
+                            <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/Components/MasterSWC</TYPE-TREF>
+                        </SW-COMPONENT-PROTOTYPE>
+                        <SW-COMPONENT-PROTOTYPE UUID="139ce472-e3b7-558e-10e4-18f1fba3a2ab">
+                            <SHORT-NAME>SlaveSWC</SHORT-NAME>
+                            <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/Components/SlaveSWC</TYPE-TREF>
+                        </SW-COMPONENT-PROTOTYPE>
+                    </COMPONENTS>
+                </COMPOSITION-SW-COMPONENT-TYPE>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model ModeSwitchComposition
+Model version                : 1.9
+Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
+XML source code generated on : Fri Mar 21 18:11:51 2025
+Model Checksum               : 1714386662 149800926 2523537586 2118801248
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Interfaces</SHORT-NAME>
+            <ELEMENTS>
+                <MODE-SWITCH-INTERFACE UUID="70328f26-cbc4-5164-cbd3-5468863a6d0e">
+                    <SHORT-NAME>MSIF_Ecu_Modes</SHORT-NAME>
+                    <IS-SERVICE>true</IS-SERVICE>
+                    <MODE-GROUP UUID="67057a9e-1dc1-521d-69e1-4d5e01607902">
+                        <SHORT-NAME>MG_Ecu_Modes</SHORT-NAME>
+                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                        <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/DataTypes/ModeDeclarationGroups/Ecu_Modes</TYPE-TREF>
+                    </MODE-GROUP>
+                </MODE-SWITCH-INTERFACE>
+            </ELEMENTS>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

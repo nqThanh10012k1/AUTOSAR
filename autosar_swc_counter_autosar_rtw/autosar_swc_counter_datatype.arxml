@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model autosar_swc_counter
+Model version                : 8.0
+Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
+XML source code generated on : Thu Mar 27 09:52:21 2025
+Model Checksum               : 374010753 2405930048 348774469 2002032061
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00049.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Company</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>Powertrain</SHORT-NAME>
+                    <AR-PACKAGES>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>DataTypes</SHORT-NAME>
+                            <ELEMENTS>
+                                <IMPLEMENTATION-DATA-TYPE UUID="52eea7e6-5205-5506-4c5e-e552ace87987">
+                                    <SHORT-NAME>sint32</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/Company/Powertrain/DataTypes/SwBaseTypes/sint32</BASE-TYPE-REF>
+                                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/Company/Powertrain/DataTypes/DataConstrs/DC_SInt32</DATA-CONSTR-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                                <IMPLEMENTATION-DATA-TYPE UUID="443405c6-46f0-521e-2d59-09088b2f6eaf">
+                                    <SHORT-NAME>boolean</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/Company/Powertrain/DataTypes/SwBaseTypes/boolean</BASE-TYPE-REF>
+                                                <COMPU-METHOD-REF DEST="COMPU-METHOD">/Company/Powertrain/DataTypes/CompuMethods/COMPU_Boolean</COMPU-METHOD-REF>
+                                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/Company/Powertrain/DataTypes/DataConstrs/DC_Boolean</DATA-CONSTR-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                                <IMPLEMENTATION-DATA-TYPE UUID="aacfddd5-6481-5bc3-0b1a-95d532b9ed17">
+                                    <SHORT-NAME>uint8</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/Company/Powertrain/DataTypes/SwBaseTypes/uint8</BASE-TYPE-REF>
+                                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/Company/Powertrain/DataTypes/DataConstrs/DC_UInt8</DATA-CONSTR-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                                <IMPLEMENTATION-DATA-TYPE UUID="1c55eda8-c447-56a1-e944-6c84f797f94d">
+                                    <SHORT-NAME>UInt8_my_qualifier_const</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/Company/Powertrain/DataTypes/SwBaseTypes/uint8</BASE-TYPE-REF>
+                                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/Company/Powertrain/DataTypes/DataConstrs/DC_UInt8</DATA-CONSTR-REF>
+                                                <ADDITIONAL-NATIVE-TYPE-QUALIFIER>const my_qualifier</ADDITIONAL-NATIVE-TYPE-QUALIFIER>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                            </ELEMENTS>
+                            <AR-PACKAGES>
+                                <AR-PACKAGE>
+                                    <SHORT-NAME>CompuMethods</SHORT-NAME>
+                                    <ELEMENTS>
+                                        <COMPU-METHOD UUID="7741d4d7-954c-5e75-ffd2-7adcc2291ade">
+                                            <SHORT-NAME>COMPU_Boolean</SHORT-NAME>
+                                            <CATEGORY>TEXTTABLE</CATEGORY>
+                                            <UNIT-REF DEST="UNIT">/Company/Powertrain/DataTypes/Units/NoUnit</UNIT-REF>
+                                            <COMPU-INTERNAL-TO-PHYS>
+                                                <COMPU-SCALES>
+                                                    <COMPU-SCALE>
+                                                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                                                        <COMPU-CONST>
+                                                            <VT>FALSE</VT>
+                                                        </COMPU-CONST>
+                                                    </COMPU-SCALE>
+                                                    <COMPU-SCALE>
+                                                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                                                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                                                        <COMPU-CONST>
+                                                            <VT>TRUE</VT>
+                                                        </COMPU-CONST>
+                                                    </COMPU-SCALE>
+                                                </COMPU-SCALES>
+                                            </COMPU-INTERNAL-TO-PHYS>
+                                        </COMPU-METHOD>
+                                    </ELEMENTS>
+                                </AR-PACKAGE>
+                                <AR-PACKAGE>
+                                    <SHORT-NAME>DataConstrs</SHORT-NAME>
+                                    <ELEMENTS>
+                                        <DATA-CONSTR UUID="63955a89-8a66-50cb-7b3c-0f8a269cd07b">
+                                            <SHORT-NAME>DC_SInt32</SHORT-NAME>
+                                            <DATA-CONSTR-RULES>
+                                                <DATA-CONSTR-RULE>
+                                                    <INTERNAL-CONSTRS>
+                                                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-2147483648</LOWER-LIMIT>
+                                                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2147483647</UPPER-LIMIT>
+                                                    </INTERNAL-CONSTRS>
+                                                </DATA-CONSTR-RULE>
+                                            </DATA-CONSTR-RULES>
+                                        </DATA-CONSTR>
+                                        <DATA-CONSTR UUID="89fd79d1-1169-5c71-3c68-67b1a810bfaa">
+                                            <SHORT-NAME>DC_Boolean</SHORT-NAME>
+                                            <DATA-CONSTR-RULES>
+                                                <DATA-CONSTR-RULE>
+                                                    <INTERNAL-CONSTRS>
+                                                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                                                    </INTERNAL-CONSTRS>
+                                                </DATA-CONSTR-RULE>
+                                            </DATA-CONSTR-RULES>
+                                        </DATA-CONSTR>
+                                        <DATA-CONSTR UUID="66771160-2f5c-5459-561c-1a4582baeba4">
+                                            <SHORT-NAME>DC_UInt8</SHORT-NAME>
+                                            <DATA-CONSTR-RULES>
+                                                <DATA-CONSTR-RULE>
+                                                    <INTERNAL-CONSTRS>
+                                                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                                                    </INTERNAL-CONSTRS>
+                                                </DATA-CONSTR-RULE>
+                                            </DATA-CONSTR-RULES>
+                                        </DATA-CONSTR>
+                                    </ELEMENTS>
+                                </AR-PACKAGE>
+                                <AR-PACKAGE>
+                                    <SHORT-NAME>Ground</SHORT-NAME>
+                                    <ELEMENTS>
+                                        <CONSTANT-SPECIFICATION UUID="ce2764a7-fccf-5758-dc50-8fae6c9a4eee">
+                                            <SHORT-NAME>INC</SHORT-NAME>
+                                            <VALUE-SPEC>
+                                                <NUMERICAL-VALUE-SPECIFICATION>
+                                                    <SHORT-LABEL>INC</SHORT-LABEL>
+                                                    <VALUE>1</VALUE>
+                                                </NUMERICAL-VALUE-SPECIFICATION>
+                                            </VALUE-SPEC>
+                                        </CONSTANT-SPECIFICATION>
+                                        <CONSTANT-SPECIFICATION UUID="da4e55bb-7f2f-5e85-5837-c4f619a6415a">
+                                            <SHORT-NAME>K</SHORT-NAME>
+                                            <VALUE-SPEC>
+                                                <NUMERICAL-VALUE-SPECIFICATION>
+                                                    <SHORT-LABEL>K</SHORT-LABEL>
+                                                    <VALUE>2</VALUE>
+                                                </NUMERICAL-VALUE-SPECIFICATION>
+                                            </VALUE-SPEC>
+                                        </CONSTANT-SPECIFICATION>
+                                    </ELEMENTS>
+                                </AR-PACKAGE>
+                                <AR-PACKAGE>
+                                    <SHORT-NAME>SwAddrMethods</SHORT-NAME>
+                                    <ELEMENTS>
+                                        <SW-ADDR-METHOD UUID="df29eab7-d25e-59f9-4a75-d618245802c5">
+                                            <SHORT-NAME>CODE</SHORT-NAME>
+                                            <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                                            <SECTION-TYPE>CODE</SECTION-TYPE>
+                                        </SW-ADDR-METHOD>
+                                        <SW-ADDR-METHOD UUID="8c1024bf-7b88-59b2-3e11-f79260ded0de">
+                                            <SHORT-NAME>VAR</SHORT-NAME>
+                                            <MEMORY-ALLOCATION-KEYWORD-POLICY>ADDR-METHOD-SHORT-NAME</MEMORY-ALLOCATION-KEYWORD-POLICY>
+                                            <SECTION-TYPE>VAR</SECTION-TYPE>
+                                        </SW-ADDR-METHOD>
+                                    </ELEMENTS>
+                                </AR-PACKAGE>
+                                <AR-PACKAGE>
+                                    <SHORT-NAME>SwBaseTypes</SHORT-NAME>
+                                    <ELEMENTS>
+                                        <SW-BASE-TYPE UUID="b2243275-ff1e-5b06-8596-db9bd2b6600f">
+                                            <SHORT-NAME>sint32</SHORT-NAME>
+                                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                                            <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                                            <BASE-TYPE-ENCODING>2C</BASE-TYPE-ENCODING>
+                                            <NATIVE-DECLARATION>sint32</NATIVE-DECLARATION>
+                                        </SW-BASE-TYPE>
+                                        <SW-BASE-TYPE UUID="12936d36-98bd-5460-c3be-73601e3104d0">
+                                            <SHORT-NAME>boolean</SHORT-NAME>
+                                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                                            <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                                            <BASE-TYPE-ENCODING>BOOLEAN</BASE-TYPE-ENCODING>
+                                            <NATIVE-DECLARATION>boolean</NATIVE-DECLARATION>
+                                        </SW-BASE-TYPE>
+                                        <SW-BASE-TYPE UUID="adc8651f-f94e-53b3-53f4-5c67f61108cd">
+                                            <SHORT-NAME>uint8</SHORT-NAME>
+                                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                                            <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                                            <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                                            <NATIVE-DECLARATION>uint8</NATIVE-DECLARATION>
+                                        </SW-BASE-TYPE>
+                                    </ELEMENTS>
+                                </AR-PACKAGE>
+                                <AR-PACKAGE>
+                                    <SHORT-NAME>Units</SHORT-NAME>
+                                    <ELEMENTS>
+                                        <UNIT UUID="51258c55-cb33-5e98-9530-de5951026001">
+                                            <SHORT-NAME>NoUnit</SHORT-NAME>
+                                            <FACTOR-SI-TO-UNIT>1</FACTOR-SI-TO-UNIT>
+                                            <OFFSET-SI-TO-UNIT>0</OFFSET-SI-TO-UNIT>
+                                        </UNIT>
+                                    </ELEMENTS>
+                                </AR-PACKAGE>
+                            </AR-PACKAGES>
+                        </AR-PACKAGE>
+                    </AR-PACKAGES>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

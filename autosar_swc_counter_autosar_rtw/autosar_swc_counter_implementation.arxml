@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model autosar_swc_counter
+Model version                : 8.0
+Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
+XML source code generated on : Thu Mar 27 09:52:21 2025
+Model Checksum               : 374010753 2405930048 348774469 2002032061
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00049.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Company</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>Powertrain</SHORT-NAME>
+                    <AR-PACKAGES>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>SwcImplementations</SHORT-NAME>
+                            <ELEMENTS>
+                                <SWC-IMPLEMENTATION UUID="a93dccdb-9ac7-585d-78d6-575544ac3b8a">
+                                    <SHORT-NAME>ASWC_Impl</SHORT-NAME>
+                                    <CODE-DESCRIPTORS>
+                                        <CODE>
+                                            <SHORT-NAME>Code</SHORT-NAME>
+                                            <ARTIFACT-DESCRIPTORS>
+                                                <AUTOSAR-ENGINEERING-OBJECT>
+                                                    <SHORT-LABEL>autosar_swc_counter_c</SHORT-LABEL>
+                                                    <CATEGORY>SWSRC</CATEGORY>
+                                                </AUTOSAR-ENGINEERING-OBJECT>
+                                                <AUTOSAR-ENGINEERING-OBJECT>
+                                                    <SHORT-LABEL>autosar_swc_counter_data_c</SHORT-LABEL>
+                                                    <CATEGORY>SWSRC</CATEGORY>
+                                                </AUTOSAR-ENGINEERING-OBJECT>
+                                                <AUTOSAR-ENGINEERING-OBJECT>
+                                                    <SHORT-LABEL>autosar_swc_counter_h</SHORT-LABEL>
+                                                    <CATEGORY>SWHDR</CATEGORY>
+                                                </AUTOSAR-ENGINEERING-OBJECT>
+                                                <AUTOSAR-ENGINEERING-OBJECT>
+                                                    <SHORT-LABEL>rtwtypes_h</SHORT-LABEL>
+                                                    <CATEGORY>SWHDR</CATEGORY>
+                                                </AUTOSAR-ENGINEERING-OBJECT>
+                                                <AUTOSAR-ENGINEERING-OBJECT>
+                                                    <SHORT-LABEL>zero_crossing_types_h</SHORT-LABEL>
+                                                    <CATEGORY>SWHDR</CATEGORY>
+                                                </AUTOSAR-ENGINEERING-OBJECT>
+                                            </ARTIFACT-DESCRIPTORS>
+                                        </CODE>
+                                    </CODE-DESCRIPTORS>
+                                    <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+                                    <RESOURCE-CONSUMPTION>
+                                        <SHORT-NAME>RsrcCons_autosar_swc_counter</SHORT-NAME>
+                                    </RESOURCE-CONSUMPTION>
+                                    <SW-VERSION>8.0.1</SW-VERSION>
+                                    <USED-CODE-GENERATOR>Embedded Coder 7.10 (R2023a) 19-Nov-2022</USED-CODE-GENERATOR>
+                                    <VENDOR-ID>0</VENDOR-ID>
+                                    <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/Company/Powertrain/Components/autosar_swc_counter/ASWC_IB</BEHAVIOR-REF>
+                                </SWC-IMPLEMENTATION>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                    </AR-PACKAGES>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

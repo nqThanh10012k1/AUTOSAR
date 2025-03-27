@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model autosar_swc_counter
+Model version                : 8.0
+Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
+XML source code generated on : Thu Mar 27 09:52:21 2025
+Model Checksum               : 374010753 2405930048 348774469 2002032061
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00049.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>Company</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>Powertrain</SHORT-NAME>
+                    <AR-PACKAGES>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>Components</SHORT-NAME>
+                            <ELEMENTS>
+                                <APPLICATION-SW-COMPONENT-TYPE UUID="3ef5d7db-0dc2-5472-6d2f-b3cf308d6292">
+                                    <SHORT-NAME>autosar_swc_counter</SHORT-NAME>
+                                    <PORTS>
+                                        <R-PORT-PROTOTYPE UUID="37f97b6b-fd70-5b05-a89a-de8d30c043a9">
+                                            <SHORT-NAME>RPort</SHORT-NAME>
+                                            <REQUIRED-COM-SPECS>
+                                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Company/Powertrain/Interfaces/InIf/InData</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <ALIVE-TIMEOUT>60</ALIVE-TIMEOUT>
+                                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_SInt32</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-RECEIVER-COM-SPEC>
+                                            </REQUIRED-COM-SPECS>
+                                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Company/Powertrain/Interfaces/InIf</REQUIRED-INTERFACE-TREF>
+                                        </R-PORT-PROTOTYPE>
+                                        <P-PORT-PROTOTYPE UUID="27e12dc7-b0b4-5a78-4656-a721fba22bf4">
+                                            <SHORT-NAME>SPort</SHORT-NAME>
+                                            <PROVIDED-COM-SPECS>
+                                                <NONQUEUED-SENDER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Company/Powertrain/Interfaces/OutIf/OutData</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_SInt32</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-SENDER-COM-SPEC>
+                                            </PROVIDED-COM-SPECS>
+                                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Company/Powertrain/Interfaces/OutIf</PROVIDED-INTERFACE-TREF>
+                                        </P-PORT-PROTOTYPE>
+                                    </PORTS>
+                                    <INTERNAL-BEHAVIORS>
+                                        <SWC-INTERNAL-BEHAVIOR UUID="6b0582ab-1313-5ba6-5b07-dec9b495b709">
+                                            <SHORT-NAME>ASWC_IB</SHORT-NAME>
+                                            <CONSTANT-MEMORYS>
+                                                <PARAMETER-DATA-PROTOTYPE UUID="7bf43b69-b63d-5182-f976-d9ac9d7a0ddc">
+                                                    <SHORT-NAME>INC</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Company/Powertrain/DataTypes/SwAddrMethods/VAR</SW-ADDR-METHOD-REF>
+                                                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/UInt8_my_qualifier_const</TYPE-TREF>
+                                                    <INIT-VALUE>
+                                                        <CONSTANT-REFERENCE>
+                                                            <SHORT-LABEL>INC</SHORT-LABEL>
+                                                            <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Company/Powertrain/DataTypes/Ground/INC</CONSTANT-REF>
+                                                        </CONSTANT-REFERENCE>
+                                                    </INIT-VALUE>
+                                                </PARAMETER-DATA-PROTOTYPE>
+                                            </CONSTANT-MEMORYS>
+                                            <STATIC-MEMORYS>
+                                                <VARIABLE-DATA-PROTOTYPE UUID="16e4c4ee-4061-5019-7edb-8018580010c6">
+                                                    <SHORT-NAME>SM_X</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/uint8</TYPE-TREF>
+                                                </VARIABLE-DATA-PROTOTYPE>
+                                            </STATIC-MEMORYS>
+                                            <AR-TYPED-PER-INSTANCE-MEMORYS>
+                                                <VARIABLE-DATA-PROTOTYPE UUID="19eed0d5-b619-58fa-1136-e6e1b758da5e">
+                                                    <SHORT-NAME>PIM_sum_out</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/uint8</TYPE-TREF>
+                                                </VARIABLE-DATA-PROTOTYPE>
+                                                <VARIABLE-DATA-PROTOTYPE UUID="6f0bf6db-968b-5f58-5b7e-dfe3c5b8d583">
+                                                    <SHORT-NAME>autosar_swc_counter_switch_out</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/uint8</TYPE-TREF>
+                                                </VARIABLE-DATA-PROTOTYPE>
+                                                <VARIABLE-DATA-PROTOTYPE UUID="71112775-17cf-5b11-73fa-1a13db8d3b28">
+                                                    <SHORT-NAME>SM_equal_to_count</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Company/Powertrain/DataTypes/SwAddrMethods/VAR</SW-ADDR-METHOD-REF>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/boolean</TYPE-TREF>
+                                                </VARIABLE-DATA-PROTOTYPE>
+                                            </AR-TYPED-PER-INSTANCE-MEMORYS>
+                                            <EVENTS>
+                                                <TIMING-EVENT UUID="d6ac8502-c737-5e75-6f37-4f430d8507f0">
+                                                    <SHORT-NAME>Event_Step</SHORT-NAME>
+                                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Company/Powertrain/Components/autosar_swc_counter/ASWC_IB/Runnable_Step</START-ON-EVENT-REF>
+                                                    <PERIOD>0.1</PERIOD>
+                                                </TIMING-EVENT>
+                                            </EVENTS>
+                                            <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                                            <RUNNABLES>
+                                                <RUNNABLE-ENTITY UUID="8e1ba558-ef0b-5ac4-c91d-08109a219893">
+                                                    <SHORT-NAME>Runnable_Init</SHORT-NAME>
+                                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                                    <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Company/Powertrain/DataTypes/SwAddrMethods/CODE</SW-ADDR-METHOD-REF>
+                                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                                    <SYMBOL>Runnable_Init</SYMBOL>
+                                                </RUNNABLE-ENTITY>
+                                                <RUNNABLE-ENTITY UUID="1b252e06-6b77-505e-d64f-4384ff179e80">
+                                                    <SHORT-NAME>Runnable_Step</SHORT-NAME>
+                                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                                    <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Company/Powertrain/DataTypes/SwAddrMethods/CODE</SW-ADDR-METHOD-REF>
+                                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                                    <DATA-READ-ACCESSS>
+                                                        <VARIABLE-ACCESS UUID="0b6054c0-335e-5d0c-a917-be8c3497d38b">
+                                                            <SHORT-NAME>IN_RPort_InData</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Company/Powertrain/Components/autosar_swc_counter/RPort</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Company/Powertrain/Interfaces/InIf/InData</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                    </DATA-READ-ACCESSS>
+                                                    <DATA-WRITE-ACCESSS>
+                                                        <VARIABLE-ACCESS UUID="19322069-b8a3-5925-3313-d10e356e787c">
+                                                            <SHORT-NAME>OUT_SPort_OutData</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Company/Powertrain/Components/autosar_swc_counter/SPort</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Company/Powertrain/Interfaces/OutIf/OutData</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                    </DATA-WRITE-ACCESSS>
+                                                    <PARAMETER-ACCESSS>
+                                                        <PARAMETER-ACCESS UUID="dc9ab874-bd8e-5614-83e2-f5f533db1f22">
+                                                            <SHORT-NAME>SCALPRM_K</SHORT-NAME>
+                                                            <ACCESSED-PARAMETER>
+                                                                <LOCAL-PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/Company/Powertrain/Components/autosar_swc_counter/ASWC_IB/K</LOCAL-PARAMETER-REF>
+                                                            </ACCESSED-PARAMETER>
+                                                        </PARAMETER-ACCESS>
+                                                    </PARAMETER-ACCESSS>
+                                                    <SYMBOL>Runnable_Step</SYMBOL>
+                                                </RUNNABLE-ENTITY>
+                                            </RUNNABLES>
+                                            <SHARED-PARAMETERS>
+                                                <PARAMETER-DATA-PROTOTYPE UUID="cf53d010-855d-562f-b11c-5441bded0d60">
+                                                    <SHORT-NAME>K</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/uint8</TYPE-TREF>
+                                                    <INIT-VALUE>
+                                                        <CONSTANT-REFERENCE>
+                                                            <SHORT-LABEL>K</SHORT-LABEL>
+                                                            <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Company/Powertrain/DataTypes/Ground/K</CONSTANT-REF>
+                                                        </CONSTANT-REFERENCE>
+                                                    </INIT-VALUE>
+                                                </PARAMETER-DATA-PROTOTYPE>
+                                            </SHARED-PARAMETERS>
+                                            <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                                        </SWC-INTERNAL-BEHAVIOR>
+                                    </INTERNAL-BEHAVIORS>
+                                </APPLICATION-SW-COMPONENT-TYPE>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                    </AR-PACKAGES>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

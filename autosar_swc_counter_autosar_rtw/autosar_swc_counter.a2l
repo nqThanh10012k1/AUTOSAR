@@ -4,9 +4,9 @@
  *
  * Code generation for model "autosar_swc_counter".
  *
- * Model version              : 8.0
+ * Model version              : 8.1
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Thu Mar 27 09:52:11 2025
+ * C source code generated on : Fri Mar 28 05:09:49 2025
  * 
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)

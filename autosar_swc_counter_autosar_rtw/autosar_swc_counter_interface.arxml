@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model autosar_swc_counter
-Model version                : 8.0
+Model version                : 8.1
 Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
-XML source code generated on : Thu Mar 27 09:52:21 2025
-Model Checksum               : 374010753 2405930048 348774469 2002032061
+XML source code generated on : Fri Mar 28 05:09:51 2025
+Model Checksum               : 3688956930 3286251395 2009782090 3200226619
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00049.xsd">
     <AR-PACKAGES>

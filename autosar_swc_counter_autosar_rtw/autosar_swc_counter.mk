@@ -2,7 +2,7 @@
 ## Makefile generated for component 'autosar_swc_counter'. 
 ## 
 ## Makefile     : autosar_swc_counter.mk
-## Generated on : Sat Mar 22 22:46:39 2025
+## Generated on : Fri Mar 28 05:02:56 2025
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/autosar_swc_counter.exe
 ## Product type : executable
 ## 
@@ -22,7 +22,7 @@ MAKEFILE                  = autosar_swc_counter.mk
 MATLAB_ROOT               = C:/PROGRA~1/MATLAB/R2023a
 MATLAB_BIN                = C:/PROGRA~1/MATLAB/R2023a/bin
 MATLAB_ARCH_BIN           = $(MATLAB_BIN)/win64
-START_DIR                 = C:/Users/PC/Documents
+START_DIR                 = C:/Users/PC/Documents/Calib/AUTOSARCounterExample
 SOLVER                    = 
 SOLVER_OBJ                = 
 CLASSIC_INTERFACE         = 0

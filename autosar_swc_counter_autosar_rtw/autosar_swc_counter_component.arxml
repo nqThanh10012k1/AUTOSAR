@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model autosar_swc_counter
-Model version                : 8.0
+Model version                : 8.1
 Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
-XML source code generated on : Thu Mar 27 09:52:21 2025
-Model Checksum               : 374010753 2405930048 348774469 2002032061
+XML source code generated on : Fri Mar 28 05:09:51 2025
+Model Checksum               : 3688956930 3286251395 2009782090 3200226619
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00049.xsd">
     <AR-PACKAGES>
@@ -33,7 +33,7 @@ Model Checksum               : 374010753 2405930048 348774469 2002032061
                                                     <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
                                                     <INIT-VALUE>
                                                         <NUMERICAL-VALUE-SPECIFICATION>
-                                                            <SHORT-LABEL>DefaultInitValue_SInt32</SHORT-LABEL>
+                                                            <SHORT-LABEL>DefaultInitValue_sint32</SHORT-LABEL>
                                                             <VALUE>0</VALUE>
                                                         </NUMERICAL-VALUE-SPECIFICATION>
                                                     </INIT-VALUE>
@@ -63,7 +63,7 @@ Model Checksum               : 374010753 2405930048 348774469 2002032061
                                         <SWC-INTERNAL-BEHAVIOR UUID="6b0582ab-1313-5ba6-5b07-dec9b495b709">
                                             <SHORT-NAME>ASWC_IB</SHORT-NAME>
                                             <CONSTANT-MEMORYS>
-                                                <PARAMETER-DATA-PROTOTYPE UUID="7bf43b69-b63d-5182-f976-d9ac9d7a0ddc">
+                                                <PARAMETER-DATA-PROTOTYPE UUID="6e3467bd-e21c-5acc-af1d-7735a90508d7">
                                                     <SHORT-NAME>INC</SHORT-NAME>
                                                     <CATEGORY>VALUE</CATEGORY>
                                                     <SW-DATA-DEF-PROPS>
@@ -84,61 +84,20 @@ Model Checksum               : 374010753 2405930048 348774469 2002032061
                                                     </INIT-VALUE>
                                                 </PARAMETER-DATA-PROTOTYPE>
                                             </CONSTANT-MEMORYS>
-                                            <STATIC-MEMORYS>
-                                                <VARIABLE-DATA-PROTOTYPE UUID="16e4c4ee-4061-5019-7edb-8018580010c6">
-                                                    <SHORT-NAME>SM_X</SHORT-NAME>
-                                                    <CATEGORY>VALUE</CATEGORY>
-                                                    <SW-DATA-DEF-PROPS>
-                                                        <SW-DATA-DEF-PROPS-VARIANTS>
-                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
-                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
-                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
-                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
-                                                        </SW-DATA-DEF-PROPS-VARIANTS>
-                                                    </SW-DATA-DEF-PROPS>
-                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/uint8</TYPE-TREF>
-                                                </VARIABLE-DATA-PROTOTYPE>
-                                            </STATIC-MEMORYS>
                                             <AR-TYPED-PER-INSTANCE-MEMORYS>
-                                                <VARIABLE-DATA-PROTOTYPE UUID="19eed0d5-b619-58fa-1136-e6e1b758da5e">
-                                                    <SHORT-NAME>PIM_sum_out</SHORT-NAME>
-                                                    <CATEGORY>VALUE</CATEGORY>
-                                                    <SW-DATA-DEF-PROPS>
-                                                        <SW-DATA-DEF-PROPS-VARIANTS>
-                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
-                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
-                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
-                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
-                                                        </SW-DATA-DEF-PROPS-VARIANTS>
-                                                    </SW-DATA-DEF-PROPS>
-                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/uint8</TYPE-TREF>
-                                                </VARIABLE-DATA-PROTOTYPE>
-                                                <VARIABLE-DATA-PROTOTYPE UUID="6f0bf6db-968b-5f58-5b7e-dfe3c5b8d583">
-                                                    <SHORT-NAME>autosar_swc_counter_switch_out</SHORT-NAME>
-                                                    <CATEGORY>VALUE</CATEGORY>
-                                                    <SW-DATA-DEF-PROPS>
-                                                        <SW-DATA-DEF-PROPS-VARIANTS>
-                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
-                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
-                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
-                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
-                                                        </SW-DATA-DEF-PROPS-VARIANTS>
-                                                    </SW-DATA-DEF-PROPS>
-                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/uint8</TYPE-TREF>
-                                                </VARIABLE-DATA-PROTOTYPE>
-                                                <VARIABLE-DATA-PROTOTYPE UUID="71112775-17cf-5b11-73fa-1a13db8d3b28">
-                                                    <SHORT-NAME>SM_equal_to_count</SHORT-NAME>
+                                                <VARIABLE-DATA-PROTOTYPE UUID="e1e9c677-ee6f-5bfd-0b23-4e0c0de1424b">
+                                                    <SHORT-NAME>autosar_swc_co_UnitDelay_DSTATE</SHORT-NAME>
                                                     <CATEGORY>VALUE</CATEGORY>
                                                     <SW-DATA-DEF-PROPS>
                                                         <SW-DATA-DEF-PROPS-VARIANTS>
                                                             <SW-DATA-DEF-PROPS-CONDITIONAL>
                                                                 <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Company/Powertrain/DataTypes/SwAddrMethods/VAR</SW-ADDR-METHOD-REF>
-                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
                                                                 <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
                                                             </SW-DATA-DEF-PROPS-CONDITIONAL>
                                                         </SW-DATA-DEF-PROPS-VARIANTS>
                                                     </SW-DATA-DEF-PROPS>
-                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/boolean</TYPE-TREF>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/uint8</TYPE-TREF>
                                                 </VARIABLE-DATA-PROTOTYPE>
                                             </AR-TYPED-PER-INSTANCE-MEMORYS>
                                             <EVENTS>
@@ -185,10 +144,10 @@ Model Checksum               : 374010753 2405930048 348774469 2002032061
                                                         </VARIABLE-ACCESS>
                                                     </DATA-WRITE-ACCESSS>
                                                     <PARAMETER-ACCESSS>
-                                                        <PARAMETER-ACCESS UUID="dc9ab874-bd8e-5614-83e2-f5f533db1f22">
-                                                            <SHORT-NAME>SCALPRM_K</SHORT-NAME>
+                                                        <PARAMETER-ACCESS UUID="c9c48fbe-0944-5540-508f-73ea8f372bdc">
+                                                            <SHORT-NAME>SCALPRM_AMP</SHORT-NAME>
                                                             <ACCESSED-PARAMETER>
-                                                                <LOCAL-PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/Company/Powertrain/Components/autosar_swc_counter/ASWC_IB/K</LOCAL-PARAMETER-REF>
+                                                                <LOCAL-PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/Company/Powertrain/Components/autosar_swc_counter/ASWC_IB/AMP</LOCAL-PARAMETER-REF>
                                                             </ACCESSED-PARAMETER>
                                                         </PARAMETER-ACCESS>
                                                     </PARAMETER-ACCESSS>
@@ -212,6 +171,26 @@ Model Checksum               : 374010753 2405930048 348774469 2002032061
                                                         <CONSTANT-REFERENCE>
                                                             <SHORT-LABEL>K</SHORT-LABEL>
                                                             <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Company/Powertrain/DataTypes/Ground/K</CONSTANT-REF>
+                                                        </CONSTANT-REFERENCE>
+                                                    </INIT-VALUE>
+                                                </PARAMETER-DATA-PROTOTYPE>
+                                                <PARAMETER-DATA-PROTOTYPE UUID="a02dc59e-d5e3-52d3-ac8a-74e1763938d4">
+                                                    <SHORT-NAME>AMP</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Company/Powertrain/DataTypes/SwAddrMethods/VAR</SW-ADDR-METHOD-REF>
+                                                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/uint8</TYPE-TREF>
+                                                    <INIT-VALUE>
+                                                        <CONSTANT-REFERENCE>
+                                                            <SHORT-LABEL>AMP</SHORT-LABEL>
+                                                            <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Company/Powertrain/DataTypes/Ground/AMP</CONSTANT-REF>
                                                         </CONSTANT-REFERENCE>
                                                     </INIT-VALUE>
                                                 </PARAMETER-DATA-PROTOTYPE>

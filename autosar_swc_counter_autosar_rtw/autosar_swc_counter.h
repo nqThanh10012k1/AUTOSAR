@@ -6,17 +6,8 @@
 #include "Rte_autosar_swc_counter.h"
 #endif
 
+#include "SUMOUT_LOOKUP.h"
 #include "Rte_Type.h"
-#include "zero_crossing_types.h"
-
-typedef struct
-{
-   sint32 Gain;
-   ZCSigState Amplifier_Trig_ZCE;
-}
-ARID_DEF_autosar_swc_counter;
-
-extern ARID_DEF_autosar_swc_counter autosar_swc_counter_ARID_DEF;
 
 #define autosar_swc_counter_START_SEC_VAR
 #include "autosar_swc_counter_MemMap.h"
@@ -25,5 +16,10 @@ extern const my_qualifier uint8 INC;
 
 #define autosar_swc_counter_STOP_SEC_VAR
 #include "autosar_swc_counter_MemMap.h"
+
+extern SUMOUT_LOOKUP SUMOUT;
+extern uint8 LIMIT;
+extern uint8 RESET;
+
 #endif
 

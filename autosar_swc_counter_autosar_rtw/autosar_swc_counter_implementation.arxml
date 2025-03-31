@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model autosar_swc_counter
-Model version                : 8.1
+Model version                : 8.5
 Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
-XML source code generated on : Fri Mar 28 05:09:51 2025
-Model Checksum               : 3688956930 3286251395 2009782090 3200226619
+XML source code generated on : Mon Mar 31 07:40:07 2025
+Model Checksum               : 1554013557 2119332924 2180218753 2696499977
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00049.xsd">
     <AR-PACKAGES>
@@ -32,15 +32,27 @@ Model Checksum               : 3688956930 3286251395 2009782090 3200226619
                                                     <CATEGORY>SWSRC</CATEGORY>
                                                 </AUTOSAR-ENGINEERING-OBJECT>
                                                 <AUTOSAR-ENGINEERING-OBJECT>
+                                                    <SHORT-LABEL>const_params_c</SHORT-LABEL>
+                                                    <CATEGORY>SWSRC</CATEGORY>
+                                                </AUTOSAR-ENGINEERING-OBJECT>
+                                                <AUTOSAR-ENGINEERING-OBJECT>
+                                                    <SHORT-LABEL>look1_iu8lu64n56_binlcse_c</SHORT-LABEL>
+                                                    <CATEGORY>SWSRC</CATEGORY>
+                                                </AUTOSAR-ENGINEERING-OBJECT>
+                                                <AUTOSAR-ENGINEERING-OBJECT>
+                                                    <SHORT-LABEL>SUMOUT_LOOKUP_h</SHORT-LABEL>
+                                                    <CATEGORY>SWHDR</CATEGORY>
+                                                </AUTOSAR-ENGINEERING-OBJECT>
+                                                <AUTOSAR-ENGINEERING-OBJECT>
                                                     <SHORT-LABEL>autosar_swc_counter_h</SHORT-LABEL>
                                                     <CATEGORY>SWHDR</CATEGORY>
                                                 </AUTOSAR-ENGINEERING-OBJECT>
                                                 <AUTOSAR-ENGINEERING-OBJECT>
-                                                    <SHORT-LABEL>rtwtypes_h</SHORT-LABEL>
+                                                    <SHORT-LABEL>look1_iu8lu64n56_binlcse_h</SHORT-LABEL>
                                                     <CATEGORY>SWHDR</CATEGORY>
                                                 </AUTOSAR-ENGINEERING-OBJECT>
                                                 <AUTOSAR-ENGINEERING-OBJECT>
-                                                    <SHORT-LABEL>zero_crossing_types_h</SHORT-LABEL>
+                                                    <SHORT-LABEL>rtwtypes_h</SHORT-LABEL>
                                                     <CATEGORY>SWHDR</CATEGORY>
                                                 </AUTOSAR-ENGINEERING-OBJECT>
                                             </ARTIFACT-DESCRIPTORS>
@@ -50,7 +62,7 @@ Model Checksum               : 3688956930 3286251395 2009782090 3200226619
                                     <RESOURCE-CONSUMPTION>
                                         <SHORT-NAME>RsrcCons_autosar_swc_counter</SHORT-NAME>
                                     </RESOURCE-CONSUMPTION>
-                                    <SW-VERSION>8.1.1</SW-VERSION>
+                                    <SW-VERSION>8.5.1</SW-VERSION>
                                     <USED-CODE-GENERATOR>Embedded Coder 7.10 (R2023a) 19-Nov-2022</USED-CODE-GENERATOR>
                                     <VENDOR-ID>0</VENDOR-ID>
                                     <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/Company/Powertrain/Components/autosar_swc_counter/ASWC_IB</BEHAVIOR-REF>

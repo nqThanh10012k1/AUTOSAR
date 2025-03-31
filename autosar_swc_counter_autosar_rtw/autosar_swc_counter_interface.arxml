@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model autosar_swc_counter
-Model version                : 8.1
+Model version                : 8.5
 Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
-XML source code generated on : Fri Mar 28 05:09:51 2025
-Model Checksum               : 3688956930 3286251395 2009782090 3200226619
+XML source code generated on : Mon Mar 31 07:40:07 2025
+Model Checksum               : 1554013557 2119332924 2180218753 2696499977
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00049.xsd">
     <AR-PACKAGES>
@@ -17,43 +17,22 @@ Model Checksum               : 3688956930 3286251395 2009782090 3200226619
                         <AR-PACKAGE>
                             <SHORT-NAME>Interfaces</SHORT-NAME>
                             <ELEMENTS>
-                                <SENDER-RECEIVER-INTERFACE UUID="e5ab5c38-0cec-58a9-cfd7-3996bb3f7379">
-                                    <SHORT-NAME>InIf</SHORT-NAME>
+                                <SENDER-RECEIVER-INTERFACE UUID="5d869f35-b587-5776-b54a-c76b7542dbe7">
+                                    <SHORT-NAME>Lookup_Val</SHORT-NAME>
                                     <IS-SERVICE>false</IS-SERVICE>
                                     <DATA-ELEMENTS>
-                                        <VARIABLE-DATA-PROTOTYPE UUID="db03dd1a-70cc-5f32-1fd0-ec31be47dbe8">
-                                            <SHORT-NAME>InData</SHORT-NAME>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="bc4722f5-cd7e-526d-1e46-f3dae87c7786">
+                                            <SHORT-NAME>Lookup</SHORT-NAME>
                                             <CATEGORY>VALUE</CATEGORY>
                                             <SW-DATA-DEF-PROPS>
                                                 <SW-DATA-DEF-PROPS-VARIANTS>
                                                     <SW-DATA-DEF-PROPS-CONDITIONAL>
-                                                        <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Company/Powertrain/DataTypes/SwAddrMethods/VAR</SW-ADDR-METHOD-REF>
                                                         <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
                                                         <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
                                                     </SW-DATA-DEF-PROPS-CONDITIONAL>
                                                 </SW-DATA-DEF-PROPS-VARIANTS>
                                             </SW-DATA-DEF-PROPS>
-                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/sint32</TYPE-TREF>
-                                        </VARIABLE-DATA-PROTOTYPE>
-                                    </DATA-ELEMENTS>
-                                </SENDER-RECEIVER-INTERFACE>
-                                <SENDER-RECEIVER-INTERFACE UUID="600e1eb3-430d-535e-a08e-831008c73b89">
-                                    <SHORT-NAME>OutIf</SHORT-NAME>
-                                    <IS-SERVICE>false</IS-SERVICE>
-                                    <DATA-ELEMENTS>
-                                        <VARIABLE-DATA-PROTOTYPE UUID="83ace7e9-9c83-5822-44f2-00f85f74f26f">
-                                            <SHORT-NAME>OutData</SHORT-NAME>
-                                            <CATEGORY>VALUE</CATEGORY>
-                                            <SW-DATA-DEF-PROPS>
-                                                <SW-DATA-DEF-PROPS-VARIANTS>
-                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
-                                                        <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Company/Powertrain/DataTypes/SwAddrMethods/VAR</SW-ADDR-METHOD-REF>
-                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
-                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
-                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
-                                                </SW-DATA-DEF-PROPS-VARIANTS>
-                                            </SW-DATA-DEF-PROPS>
-                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/sint32</TYPE-TREF>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/uint8</TYPE-TREF>
                                         </VARIABLE-DATA-PROTOTYPE>
                                     </DATA-ELEMENTS>
                                 </SENDER-RECEIVER-INTERFACE>

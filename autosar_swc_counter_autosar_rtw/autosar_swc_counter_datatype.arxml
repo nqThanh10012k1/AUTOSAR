@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model autosar_swc_counter
-Model version                : 8.1
+Model version                : 8.5
 Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
-XML source code generated on : Fri Mar 28 05:09:51 2025
-Model Checksum               : 3688956930 3286251395 2009782090 3200226619
+XML source code generated on : Mon Mar 31 07:40:07 2025
+Model Checksum               : 1554013557 2119332924 2180218753 2696499977
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00049.xsd">
     <AR-PACKAGES>
@@ -17,18 +17,6 @@ Model Checksum               : 3688956930 3286251395 2009782090 3200226619
                         <AR-PACKAGE>
                             <SHORT-NAME>DataTypes</SHORT-NAME>
                             <ELEMENTS>
-                                <IMPLEMENTATION-DATA-TYPE UUID="52eea7e6-5205-5506-4c5e-e552ace87987">
-                                    <SHORT-NAME>sint32</SHORT-NAME>
-                                    <CATEGORY>VALUE</CATEGORY>
-                                    <SW-DATA-DEF-PROPS>
-                                        <SW-DATA-DEF-PROPS-VARIANTS>
-                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
-                                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/Company/Powertrain/DataTypes/SwBaseTypes/sint32</BASE-TYPE-REF>
-                                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/Company/Powertrain/DataTypes/DataConstrs/DC_SInt32</DATA-CONSTR-REF>
-                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
-                                        </SW-DATA-DEF-PROPS-VARIANTS>
-                                    </SW-DATA-DEF-PROPS>
-                                </IMPLEMENTATION-DATA-TYPE>
                                 <IMPLEMENTATION-DATA-TYPE UUID="aacfddd5-6481-5bc3-0b1a-95d532b9ed17">
                                     <SHORT-NAME>uint8</SHORT-NAME>
                                     <CATEGORY>VALUE</CATEGORY>
@@ -54,22 +42,173 @@ Model Checksum               : 3688956930 3286251395 2009782090 3200226619
                                         </SW-DATA-DEF-PROPS-VARIANTS>
                                     </SW-DATA-DEF-PROPS>
                                 </IMPLEMENTATION-DATA-TYPE>
+                                <IMPLEMENTATION-DATA-TYPE UUID="eaa8d7e6-00ff-5a70-2d29-036fe4dc1c40">
+                                    <SHORT-NAME>SUMOUT_LOOKUP</SHORT-NAME>
+                                    <CATEGORY>STRUCTURE</CATEGORY>
+                                    <SUB-ELEMENTS>
+                                        <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="613f02e8-7f05-512a-f6a3-3253f9685e0b">
+                                            <SHORT-NAME>BP1</SHORT-NAME>
+                                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/rt_Array_uint8_6</IMPLEMENTATION-DATA-TYPE-REF>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                                        <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="7099d12b-b590-510e-4b0b-aa01b0c23234">
+                                            <SHORT-NAME>Table</SHORT-NAME>
+                                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/rt_Array_uint8_6</IMPLEMENTATION-DATA-TYPE-REF>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                                    </SUB-ELEMENTS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                                <IMPLEMENTATION-DATA-TYPE UUID="e3a3cf38-2bac-5bc0-ec6d-caf8ab849767">
+                                    <SHORT-NAME>rt_Array_uint8_6</SHORT-NAME>
+                                    <CATEGORY>ARRAY</CATEGORY>
+                                    <SUB-ELEMENTS>
+                                        <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="5c0f6707-964c-5b8d-f5c8-19425d21649f">
+                                            <SHORT-NAME>rt_Array_uint8_6</SHORT-NAME>
+                                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                            <ARRAY-SIZE>6</ARRAY-SIZE>
+                                            <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                                    </SUB-ELEMENTS>
+                                </IMPLEMENTATION-DATA-TYPE>
                             </ELEMENTS>
                             <AR-PACKAGES>
                                 <AR-PACKAGE>
+                                    <SHORT-NAME>ApplDataTypes</SHORT-NAME>
+                                    <ELEMENTS>
+                                        <APPLICATION-PRIMITIVE-DATA-TYPE UUID="fdb7e061-9a74-523d-cd04-1d03b62f0875">
+                                            <SHORT-NAME>Appl_SUMOUT</SHORT-NAME>
+                                            <CATEGORY>CURVE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                                        <SW-CALPRM-AXIS-SET>
+                                                            <SW-CALPRM-AXIS>
+                                                                <SW-AXIS-INDEX>1</SW-AXIS-INDEX>
+                                                                <CATEGORY>STD_AXIS</CATEGORY>
+                                                                <SW-AXIS-INDIVIDUAL>
+                                                                    <INPUT-VARIABLE-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Company/Powertrain/DataTypes/ApplDataTypes/uint8</INPUT-VARIABLE-TYPE-REF>
+                                                                    <COMPU-METHOD-REF DEST="COMPU-METHOD">/Company/Powertrain/DataTypes/CompuMethods/Identcl</COMPU-METHOD-REF>
+                                                                    <SW-MAX-AXIS-POINTS>6</SW-MAX-AXIS-POINTS>
+                                                                    <SW-MIN-AXIS-POINTS>6</SW-MIN-AXIS-POINTS>
+                                                                    <DATA-CONSTR-REF DEST="DATA-CONSTR">/Company/Powertrain/DataTypes/ApplDataTypes/DataConstrs/DC_uint8</DATA-CONSTR-REF>
+                                                                </SW-AXIS-INDIVIDUAL>
+                                                            </SW-CALPRM-AXIS>
+                                                        </SW-CALPRM-AXIS-SET>
+                                                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/Company/Powertrain/DataTypes/CompuMethods/Identcl</COMPU-METHOD-REF>
+                                                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/Company/Powertrain/DataTypes/ApplDataTypes/DataConstrs/DC_uint8</DATA-CONSTR-REF>
+                                                        <SW-RECORD-LAYOUT-REF DEST="SW-RECORD-LAYOUT">/Company/Powertrain/DataTypes/ApplDataTypes/SwRecordLayouts/IntCur_u8_u8_M</SW-RECORD-LAYOUT-REF>
+                                                        <VALUE-AXIS-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Company/Powertrain/DataTypes/ApplDataTypes/uint8</VALUE-AXIS-DATA-TYPE-REF>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                        </APPLICATION-PRIMITIVE-DATA-TYPE>
+                                        <APPLICATION-PRIMITIVE-DATA-TYPE UUID="f0ca36ef-5521-5810-1c49-f9e9c5016b31">
+                                            <SHORT-NAME>uint8</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/Company/Powertrain/DataTypes/CompuMethods/Identcl</COMPU-METHOD-REF>
+                                                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/Company/Powertrain/DataTypes/ApplDataTypes/DataConstrs/DC_uint8</DATA-CONSTR-REF>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                        </APPLICATION-PRIMITIVE-DATA-TYPE>
+                                    </ELEMENTS>
+                                    <AR-PACKAGES>
+                                        <AR-PACKAGE>
+                                            <SHORT-NAME>DataConstrs</SHORT-NAME>
+                                            <ELEMENTS>
+                                                <DATA-CONSTR UUID="762e45a6-a97f-57fd-9b52-c395920de36b">
+                                                    <SHORT-NAME>DC_uint8</SHORT-NAME>
+                                                    <DATA-CONSTR-RULES>
+                                                        <DATA-CONSTR-RULE>
+                                                            <PHYS-CONSTRS>
+                                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                                                                <UNIT-REF DEST="UNIT">/Company/Powertrain/DataTypes/Units/NoUnit</UNIT-REF>
+                                                            </PHYS-CONSTRS>
+                                                        </DATA-CONSTR-RULE>
+                                                    </DATA-CONSTR-RULES>
+                                                </DATA-CONSTR>
+                                            </ELEMENTS>
+                                        </AR-PACKAGE>
+                                        <AR-PACKAGE>
+                                            <SHORT-NAME>SwRecordLayouts</SHORT-NAME>
+                                            <ELEMENTS>
+                                                <SW-RECORD-LAYOUT UUID="932b20fb-5dd9-5535-4c60-a6cb3dc378e1">
+                                                    <SHORT-NAME>IntCur_u8_u8_M</SHORT-NAME>
+                                                    <SW-RECORD-LAYOUT-GROUP>
+                                                        <SHORT-LABEL>IntCur_u8_u8_M</SHORT-LABEL>
+                                                        <SW-RECORD-LAYOUT-GROUP>
+                                                            <SHORT-LABEL>X</SHORT-LABEL>
+                                                            <CATEGORY>INDEX_INCR</CATEGORY>
+                                                            <SW-RECORD-LAYOUT-GROUP-AXIS>1</SW-RECORD-LAYOUT-GROUP-AXIS>
+                                                            <SW-RECORD-LAYOUT-GROUP-INDEX>X</SW-RECORD-LAYOUT-GROUP-INDEX>
+                                                            <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                                                            <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                                                            <SW-RECORD-LAYOUT-V>
+                                                                <SHORT-LABEL>VALUE</SHORT-LABEL>
+                                                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/Company/Powertrain/DataTypes/SwBaseTypes/uint8</BASE-TYPE-REF>
+                                                                <SW-RECORD-LAYOUT-V-AXIS>1</SW-RECORD-LAYOUT-V-AXIS>
+                                                                <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                                                            </SW-RECORD-LAYOUT-V>
+                                                        </SW-RECORD-LAYOUT-GROUP>
+                                                        <SW-RECORD-LAYOUT-GROUP>
+                                                            <SHORT-LABEL>Val</SHORT-LABEL>
+                                                            <CATEGORY>COLUMN_DIR</CATEGORY>
+                                                            <SW-RECORD-LAYOUT-GROUP-AXIS>1</SW-RECORD-LAYOUT-GROUP-AXIS>
+                                                            <SW-RECORD-LAYOUT-GROUP-INDEX>X</SW-RECORD-LAYOUT-GROUP-INDEX>
+                                                            <SW-RECORD-LAYOUT-GROUP-FROM>1</SW-RECORD-LAYOUT-GROUP-FROM>
+                                                            <SW-RECORD-LAYOUT-GROUP-TO>-1</SW-RECORD-LAYOUT-GROUP-TO>
+                                                            <SW-RECORD-LAYOUT-V>
+                                                                <SHORT-LABEL>Val</SHORT-LABEL>
+                                                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/Company/Powertrain/DataTypes/SwBaseTypes/uint8</BASE-TYPE-REF>
+                                                                <SW-RECORD-LAYOUT-V-AXIS>0</SW-RECORD-LAYOUT-V-AXIS>
+                                                                <SW-RECORD-LAYOUT-V-PROP>VALUE</SW-RECORD-LAYOUT-V-PROP>
+                                                                <SW-RECORD-LAYOUT-V-INDEX>X</SW-RECORD-LAYOUT-V-INDEX>
+                                                            </SW-RECORD-LAYOUT-V>
+                                                        </SW-RECORD-LAYOUT-GROUP>
+                                                    </SW-RECORD-LAYOUT-GROUP>
+                                                </SW-RECORD-LAYOUT>
+                                            </ELEMENTS>
+                                        </AR-PACKAGE>
+                                    </AR-PACKAGES>
+                                </AR-PACKAGE>
+                                <AR-PACKAGE>
+                                    <SHORT-NAME>CompuMethods</SHORT-NAME>
+                                    <ELEMENTS>
+                                        <COMPU-METHOD UUID="51b06847-5e12-51a5-26a3-4b44d5e6bc3e">
+                                            <SHORT-NAME>Identcl</SHORT-NAME>
+                                            <CATEGORY>IDENTICAL</CATEGORY>
+                                            <UNIT-REF DEST="UNIT">/Company/Powertrain/DataTypes/Units/NoUnit</UNIT-REF>
+                                        </COMPU-METHOD>
+                                    </ELEMENTS>
+                                </AR-PACKAGE>
+                                <AR-PACKAGE>
                                     <SHORT-NAME>DataConstrs</SHORT-NAME>
                                     <ELEMENTS>
-                                        <DATA-CONSTR UUID="63955a89-8a66-50cb-7b3c-0f8a269cd07b">
-                                            <SHORT-NAME>DC_SInt32</SHORT-NAME>
-                                            <DATA-CONSTR-RULES>
-                                                <DATA-CONSTR-RULE>
-                                                    <INTERNAL-CONSTRS>
-                                                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">-2147483648</LOWER-LIMIT>
-                                                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2147483647</UPPER-LIMIT>
-                                                    </INTERNAL-CONSTRS>
-                                                </DATA-CONSTR-RULE>
-                                            </DATA-CONSTR-RULES>
-                                        </DATA-CONSTR>
                                         <DATA-CONSTR UUID="66771160-2f5c-5459-561c-1a4582baeba4">
                                             <SHORT-NAME>DC_UInt8</SHORT-NAME>
                                             <DATA-CONSTR-RULES>
@@ -84,6 +223,24 @@ Model Checksum               : 3688956930 3286251395 2009782090 3200226619
                                     </ELEMENTS>
                                 </AR-PACKAGE>
                                 <AR-PACKAGE>
+                                    <SHORT-NAME>DataTypeMappings</SHORT-NAME>
+                                    <ELEMENTS>
+                                        <DATA-TYPE-MAPPING-SET UUID="5cfa43ca-01a7-597b-0bcb-0409371ae317">
+                                            <SHORT-NAME>autosar_swc_counterDataTypeMappingsSet</SHORT-NAME>
+                                            <DATA-TYPE-MAPS>
+                                                <DATA-TYPE-MAP>
+                                                    <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Company/Powertrain/DataTypes/ApplDataTypes/uint8</APPLICATION-DATA-TYPE-REF>
+                                                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                                                </DATA-TYPE-MAP>
+                                                <DATA-TYPE-MAP>
+                                                    <APPLICATION-DATA-TYPE-REF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Company/Powertrain/DataTypes/ApplDataTypes/Appl_SUMOUT</APPLICATION-DATA-TYPE-REF>
+                                                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/SUMOUT_LOOKUP</IMPLEMENTATION-DATA-TYPE-REF>
+                                                </DATA-TYPE-MAP>
+                                            </DATA-TYPE-MAPS>
+                                        </DATA-TYPE-MAPPING-SET>
+                                    </ELEMENTS>
+                                </AR-PACKAGE>
+                                <AR-PACKAGE>
                                     <SHORT-NAME>Ground</SHORT-NAME>
                                     <ELEMENTS>
                                         <CONSTANT-SPECIFICATION UUID="ce2764a7-fccf-5758-dc50-8fae6c9a4eee">
@@ -95,22 +252,63 @@ Model Checksum               : 3688956930 3286251395 2009782090 3200226619
                                                 </NUMERICAL-VALUE-SPECIFICATION>
                                             </VALUE-SPEC>
                                         </CONSTANT-SPECIFICATION>
-                                        <CONSTANT-SPECIFICATION UUID="da4e55bb-7f2f-5e85-5837-c4f619a6415a">
-                                            <SHORT-NAME>K</SHORT-NAME>
+                                        <CONSTANT-SPECIFICATION UUID="08b5b751-14b0-566d-044f-76f316f9f31f">
+                                            <SHORT-NAME>LIMIT</SHORT-NAME>
                                             <VALUE-SPEC>
                                                 <NUMERICAL-VALUE-SPECIFICATION>
-                                                    <SHORT-LABEL>K</SHORT-LABEL>
-                                                    <VALUE>2</VALUE>
+                                                    <SHORT-LABEL>LIMIT</SHORT-LABEL>
+                                                    <VALUE>5</VALUE>
                                                 </NUMERICAL-VALUE-SPECIFICATION>
                                             </VALUE-SPEC>
                                         </CONSTANT-SPECIFICATION>
-                                        <CONSTANT-SPECIFICATION UUID="0e8b86d2-9246-5fd9-fba1-e264a4cb2756">
-                                            <SHORT-NAME>AMP</SHORT-NAME>
+                                        <CONSTANT-SPECIFICATION UUID="6935632b-2c9a-5595-8e6e-dec4f7592801">
+                                            <SHORT-NAME>RESET</SHORT-NAME>
                                             <VALUE-SPEC>
                                                 <NUMERICAL-VALUE-SPECIFICATION>
-                                                    <SHORT-LABEL>AMP</SHORT-LABEL>
-                                                    <VALUE>2</VALUE>
+                                                    <SHORT-LABEL>RESET</SHORT-LABEL>
+                                                    <VALUE>0</VALUE>
                                                 </NUMERICAL-VALUE-SPECIFICATION>
+                                            </VALUE-SPEC>
+                                        </CONSTANT-SPECIFICATION>
+                                        <CONSTANT-SPECIFICATION UUID="66fb9249-58d0-5bcb-f5ff-6b7641b36274">
+                                            <SHORT-NAME>SUMOUT</SHORT-NAME>
+                                            <VALUE-SPEC>
+                                                <APPLICATION-VALUE-SPECIFICATION>
+                                                    <SHORT-LABEL>SUMOUT</SHORT-LABEL>
+                                                    <CATEGORY>CURVE</CATEGORY>
+                                                    <SW-AXIS-CONTS>
+                                                        <SW-AXIS-CONT>
+                                                            <CATEGORY>STD_AXIS</CATEGORY>
+                                                            <UNIT-REF DEST="UNIT">/Company/Powertrain/DataTypes/Units/NoUnit</UNIT-REF>
+                                                            <SW-AXIS-INDEX>1</SW-AXIS-INDEX>
+                                                            <SW-ARRAYSIZE>
+                                                                <V>6</V>
+                                                            </SW-ARRAYSIZE>
+                                                            <SW-VALUES-PHYS>
+                                                                <V>1</V>
+                                                                <V>2</V>
+                                                                <V>3</V>
+                                                                <V>4</V>
+                                                                <V>5</V>
+                                                                <V>6</V>
+                                                            </SW-VALUES-PHYS>
+                                                        </SW-AXIS-CONT>
+                                                    </SW-AXIS-CONTS>
+                                                    <SW-VALUE-CONT>
+                                                        <UNIT-REF DEST="UNIT">/Company/Powertrain/DataTypes/Units/NoUnit</UNIT-REF>
+                                                        <SW-ARRAYSIZE>
+                                                            <V>6</V>
+                                                        </SW-ARRAYSIZE>
+                                                        <SW-VALUES-PHYS>
+                                                            <V>11</V>
+                                                            <V>12</V>
+                                                            <V>13</V>
+                                                            <V>14</V>
+                                                            <V>15</V>
+                                                            <V>16</V>
+                                                        </SW-VALUES-PHYS>
+                                                    </SW-VALUE-CONT>
+                                                </APPLICATION-VALUE-SPECIFICATION>
                                             </VALUE-SPEC>
                                         </CONSTANT-SPECIFICATION>
                                     </ELEMENTS>
@@ -133,13 +331,6 @@ Model Checksum               : 3688956930 3286251395 2009782090 3200226619
                                 <AR-PACKAGE>
                                     <SHORT-NAME>SwBaseTypes</SHORT-NAME>
                                     <ELEMENTS>
-                                        <SW-BASE-TYPE UUID="b2243275-ff1e-5b06-8596-db9bd2b6600f">
-                                            <SHORT-NAME>sint32</SHORT-NAME>
-                                            <CATEGORY>FIXED_LENGTH</CATEGORY>
-                                            <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
-                                            <BASE-TYPE-ENCODING>2C</BASE-TYPE-ENCODING>
-                                            <NATIVE-DECLARATION>sint32</NATIVE-DECLARATION>
-                                        </SW-BASE-TYPE>
                                         <SW-BASE-TYPE UUID="adc8651f-f94e-53b3-53f4-5c67f61108cd">
                                             <SHORT-NAME>uint8</SHORT-NAME>
                                             <CATEGORY>FIXED_LENGTH</CATEGORY>
@@ -147,6 +338,16 @@ Model Checksum               : 3688956930 3286251395 2009782090 3200226619
                                             <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
                                             <NATIVE-DECLARATION>uint8</NATIVE-DECLARATION>
                                         </SW-BASE-TYPE>
+                                    </ELEMENTS>
+                                </AR-PACKAGE>
+                                <AR-PACKAGE>
+                                    <SHORT-NAME>Units</SHORT-NAME>
+                                    <ELEMENTS>
+                                        <UNIT UUID="49482b7e-395b-5f8a-7e8d-003d61587c8d">
+                                            <SHORT-NAME>NoUnit</SHORT-NAME>
+                                            <FACTOR-SI-TO-UNIT>1</FACTOR-SI-TO-UNIT>
+                                            <OFFSET-SI-TO-UNIT>0</OFFSET-SI-TO-UNIT>
+                                        </UNIT>
                                     </ELEMENTS>
                                 </AR-PACKAGE>
                             </AR-PACKAGES>

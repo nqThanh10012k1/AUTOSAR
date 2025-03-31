@@ -6,9 +6,9 @@
  *
  * Code generation for model "autosar_swc_counter".
  *
- * Model version              : 8.1
+ * Model version              : 8.5
  * Simulink Coder version : 9.9 (R2023a) 19-Nov-2022
- * C source code generated on : Fri Mar 28 05:03:46 2025
+ * C source code generated on : Mon Mar 31 07:40:52 2025
  *
  * Target selection: autosar.tlc
  * Embedded hardware selection: Intel->x86-64 (Windows64)
@@ -42,18 +42,6 @@ ASAP2_VERSION  1 71     /* Version 1.71 */
     /end MOD_COMMON
 
   /begin CHARACTERISTIC 
-    /* Name                   */      AMP
-    /* Long Identifier        */      ""
-    /* Type                   */      VALUE
-    /* ECU Address            */      0x0000 /* @ECU_Address@AMP@ */
-    /* Record Layout          */      Record_UBYTE
-    /* Maximum Difference     */      0
-    /* Conversion Method      */      autosar_swc_counter_CM_uint8
-    /* Lower Limit            */      0
-    /* Upper Limit            */      255
-  /end CHARACTERISTIC 
-
-  /begin CHARACTERISTIC 
     /* Name                   */      INC
     /* Long Identifier        */      ""
     /* Type                   */      VALUE
@@ -65,28 +53,61 @@ ASAP2_VERSION  1 71     /* Version 1.71 */
     /* Upper Limit            */      255
   /end CHARACTERISTIC 
 
-  /begin MEASUREMENT 
-    /* Name                   */      InData
-    /* Long identifier        */      ""
-    /* Data type              */      SLONG
-    /* Conversion method      */      autosar_swc_counter_CM_int32
-    /* Resolution (Not used)  */      0      
-    /* Accuracy (Not used)    */      0      
-    /* Lower limit            */      -2147483648
-    /* Upper limit            */      2147483647
-    ECU_ADDRESS                       0x0000 /* @ECU_Address@InData@ */
-  /end MEASUREMENT 
+  /begin CHARACTERISTIC 
+    /* Name                   */      LIMIT
+    /* Long Identifier        */      ""
+    /* Type                   */      VALUE
+    /* ECU Address            */      0x0000 /* @ECU_Address@LIMIT@ */
+    /* Record Layout          */      Record_UBYTE
+    /* Maximum Difference     */      0
+    /* Conversion Method      */      autosar_swc_counter_CM_uint8
+    /* Lower Limit            */      0
+    /* Upper Limit            */      255
+  /end CHARACTERISTIC 
+
+  /begin CHARACTERISTIC 
+    /* Name                   */      RESET
+    /* Long Identifier        */      ""
+    /* Type                   */      VALUE
+    /* ECU Address            */      0x0000 /* @ECU_Address@RESET@ */
+    /* Record Layout          */      Record_UBYTE
+    /* Maximum Difference     */      0
+    /* Conversion Method      */      autosar_swc_counter_CM_uint8
+    /* Lower Limit            */      0
+    /* Upper Limit            */      255
+  /end CHARACTERISTIC 
+
+  /begin CHARACTERISTIC 
+    /* Name                   */      SUMOUT
+    /* Long Identifier        */      ""
+    /* Characteristic Type    */      CURVE
+    /* ECU Address            */      0x0000 /* @ECU_Address@SUMOUT@ */
+    /* Record Layout          */      SUMOUT_LOOKUP
+    /* Maxdiff                */      0
+    /* Conversion Method      */      autosar_swc_counter_CM_uint8
+    /* Lower Limit            */      0
+    /* Upper Limit            */      255
+    /begin AXIS_DESCR
+      /* Description of X-Axis Points */
+      /* Axis Type            */      STD_AXIS
+      /* Reference to Input   */      NO_INPUT_QUANTITY
+      /* Conversion Method    */      autosar_swc_counter_CM_uint8
+      /* Number of Axis Pts   */      6
+      /* Lower Limit          */      0
+      /* Upper Limit          */      255
+    /end AXIS_DESCR
+  /end CHARACTERISTIC 
 
   /begin MEASUREMENT 
-    /* Name                   */      OutData
+    /* Name                   */      Lookup
     /* Long identifier        */      ""
-    /* Data type              */      SLONG
-    /* Conversion method      */      autosar_swc_counter_CM_int32
+    /* Data type              */      UBYTE
+    /* Conversion method      */      autosar_swc_counter_CM_uint8
     /* Resolution (Not used)  */      0      
     /* Accuracy (Not used)    */      0      
-    /* Lower limit            */      -2147483648
-    /* Upper limit            */      2147483647
-    ECU_ADDRESS                       0x0000 /* @ECU_Address@OutData@ */
+    /* Lower limit            */      0
+    /* Upper limit            */      255
+    ECU_ADDRESS                       0x0000 /* @ECU_Address@Lookup@ */
   /end MEASUREMENT 
 
   /begin MEASUREMENT 
@@ -101,46 +122,6 @@ ASAP2_VERSION  1 71     /* Version 1.71 */
     ECU_ADDRESS                       0x0000 /* @ECU_Address@autosar_swc_co_UnitDelay_DSTATE@ */
   /end MEASUREMENT 
 
-  /begin MEASUREMENT 
-    /* Name                   */      autosar_swc_counter_ARID_DEF.Amplifier_Trig_ZCE
-    /* Long identifier        */      ""
-    /* Data type              */      UBYTE
-    /* Conversion method      */      autosar_swc_counter_CM_ZCSigState
-    /* Resolution (Not used)  */      0      
-    /* Accuracy (Not used)    */      0      
-    /* Lower limit            */      0
-    /* Upper limit            */      255
-    ECU_ADDRESS                       0x0000 /* @ECU_Address@autosar_swc_counter_ARID_DEF.Amplifier_Trig_ZCE@ */
-  /end MEASUREMENT 
-
-  /begin MEASUREMENT 
-    /* Name                   */      autosar_swc_counter_ARID_DEF.Gain
-    /* Long identifier        */      ""
-    /* Data type              */      SLONG
-    /* Conversion method      */      autosar_swc_counter_CM_int32
-    /* Resolution (Not used)  */      0      
-    /* Accuracy (Not used)    */      0      
-    /* Lower limit            */      -2147483648
-    /* Upper limit            */      2147483647
-    ECU_ADDRESS                       0x0000 /* @ECU_Address@autosar_swc_counter_ARID_DEF.Gain@ */
-  /end MEASUREMENT 
-
-  /begin COMPU_METHOD
-    /* Name of CompuMethod    */      autosar_swc_counter_CM_ZCSigState
-    /* Long identifier        */      "Q = V"
-    /* Conversion Type        */      IDENTICAL
-    /* Format                 */      "%0.6"
-    /* Units                  */      ""
-  /end COMPU_METHOD
-
-  /begin COMPU_METHOD
-    /* Name of CompuMethod    */      autosar_swc_counter_CM_int32
-    /* Long identifier        */      "Q = V"
-    /* Conversion Type        */      IDENTICAL
-    /* Format                 */      "%10.0"
-    /* Units                  */      ""
-  /end COMPU_METHOD
-
   /begin COMPU_METHOD
     /* Name of CompuMethod    */      autosar_swc_counter_CM_uint8
     /* Long identifier        */      "Q = V"
@@ -149,40 +130,31 @@ ASAP2_VERSION  1 71     /* Version 1.71 */
     /* Units                  */      ""
   /end COMPU_METHOD
 
-  /begin  RECORD_LAYOUT Record_SLONG
-    FNC_VALUES 1 SLONG COLUMN_DIR DIRECT
-  /end  RECORD_LAYOUT 
-
   /begin  RECORD_LAYOUT Record_UBYTE
     FNC_VALUES 1 UBYTE COLUMN_DIR DIRECT
   /end  RECORD_LAYOUT 
+
+  /* Record Layouts for Lookup Tables in Standard Axis format */
+
+  /begin RECORD_LAYOUT SUMOUT_LOOKUP
+    AXIS_PTS_X 1 UBYTE INDEX_INCR DIRECT
+    FNC_VALUES 2 UBYTE COLUMN_DIR DIRECT
+  /end RECORD_LAYOUT 
+
 
   /begin GROUP
     /* Name                   */      autosar_swc_counter
     /* Long identifier        */      "autosar_swc_counter"
     /* Root                   */      ROOT
-    /begin SUB_GROUP
-      autosar_swc_counter_Amplifier
-    /end SUB_GROUP
     /begin REF_CHARACTERISTIC
       INC
+      LIMIT
+      RESET
+      SUMOUT
     /end REF_CHARACTERISTIC
     /begin REF_MEASUREMENT
-      InData
-      OutData
+      Lookup
       autosar_swc_co_UnitDelay_DSTATE
-    /end REF_MEASUREMENT
-  /end GROUP
-
-  /begin GROUP
-    /* Name                   */      autosar_swc_counter_Amplifier
-    /* Long identifier        */      "autosar_swc_counter/Amplifier"
-    /begin REF_CHARACTERISTIC
-      AMP
-    /end REF_CHARACTERISTIC
-    /begin REF_MEASUREMENT
-      InData
-      autosar_swc_counter_ARID_DEF.Gain
     /end REF_MEASUREMENT
   /end GROUP
 

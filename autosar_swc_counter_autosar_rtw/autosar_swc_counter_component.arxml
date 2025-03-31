@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model autosar_swc_counter
-Model version                : 8.1
+Model version                : 8.5
 Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
-XML source code generated on : Fri Mar 28 05:09:51 2025
-Model Checksum               : 3688956930 3286251395 2009782090 3200226619
+XML source code generated on : Mon Mar 31 07:40:07 2025
+Model Checksum               : 1554013557 2119332924 2180218753 2696499977
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00049.xsd">
     <AR-PACKAGES>
@@ -20,50 +20,29 @@ Model Checksum               : 3688956930 3286251395 2009782090 3200226619
                                 <APPLICATION-SW-COMPONENT-TYPE UUID="3ef5d7db-0dc2-5472-6d2f-b3cf308d6292">
                                     <SHORT-NAME>autosar_swc_counter</SHORT-NAME>
                                     <PORTS>
-                                        <R-PORT-PROTOTYPE UUID="37f97b6b-fd70-5b05-a89a-de8d30c043a9">
-                                            <SHORT-NAME>RPort</SHORT-NAME>
-                                            <REQUIRED-COM-SPECS>
-                                                <NONQUEUED-RECEIVER-COM-SPEC>
-                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Company/Powertrain/Interfaces/InIf/InData</DATA-ELEMENT-REF>
-                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
-                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
-                                                    <ALIVE-TIMEOUT>60</ALIVE-TIMEOUT>
-                                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
-                                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
-                                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
-                                                    <INIT-VALUE>
-                                                        <NUMERICAL-VALUE-SPECIFICATION>
-                                                            <SHORT-LABEL>DefaultInitValue_sint32</SHORT-LABEL>
-                                                            <VALUE>0</VALUE>
-                                                        </NUMERICAL-VALUE-SPECIFICATION>
-                                                    </INIT-VALUE>
-                                                </NONQUEUED-RECEIVER-COM-SPEC>
-                                            </REQUIRED-COM-SPECS>
-                                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Company/Powertrain/Interfaces/InIf</REQUIRED-INTERFACE-TREF>
-                                        </R-PORT-PROTOTYPE>
-                                        <P-PORT-PROTOTYPE UUID="27e12dc7-b0b4-5a78-4656-a721fba22bf4">
-                                            <SHORT-NAME>SPort</SHORT-NAME>
+                                        <P-PORT-PROTOTYPE UUID="a988b0e4-fc03-53db-f449-5f7be21302ec">
+                                            <SHORT-NAME>Lookup</SHORT-NAME>
                                             <PROVIDED-COM-SPECS>
                                                 <NONQUEUED-SENDER-COM-SPEC>
-                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Company/Powertrain/Interfaces/OutIf/OutData</DATA-ELEMENT-REF>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/Company/Powertrain/Interfaces/Lookup_Val/Lookup</DATA-ELEMENT-REF>
                                                     <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
                                                     <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
                                                     <INIT-VALUE>
                                                         <NUMERICAL-VALUE-SPECIFICATION>
-                                                            <SHORT-LABEL>DefaultInitValue_SInt32</SHORT-LABEL>
+                                                            <SHORT-LABEL>DefaultInitValue_uint8</SHORT-LABEL>
                                                             <VALUE>0</VALUE>
                                                         </NUMERICAL-VALUE-SPECIFICATION>
                                                     </INIT-VALUE>
                                                 </NONQUEUED-SENDER-COM-SPEC>
                                             </PROVIDED-COM-SPECS>
-                                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Company/Powertrain/Interfaces/OutIf</PROVIDED-INTERFACE-TREF>
+                                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Company/Powertrain/Interfaces/Lookup_Val</PROVIDED-INTERFACE-TREF>
                                         </P-PORT-PROTOTYPE>
                                     </PORTS>
                                     <INTERNAL-BEHAVIORS>
                                         <SWC-INTERNAL-BEHAVIOR UUID="6b0582ab-1313-5ba6-5b07-dec9b495b709">
                                             <SHORT-NAME>ASWC_IB</SHORT-NAME>
                                             <CONSTANT-MEMORYS>
-                                                <PARAMETER-DATA-PROTOTYPE UUID="6e3467bd-e21c-5acc-af1d-7735a90508d7">
+                                                <PARAMETER-DATA-PROTOTYPE UUID="05e049eb-3789-5f6c-64d2-0df6b8c86e35">
                                                     <SHORT-NAME>INC</SHORT-NAME>
                                                     <CATEGORY>VALUE</CATEGORY>
                                                     <SW-DATA-DEF-PROPS>
@@ -83,9 +62,69 @@ Model Checksum               : 3688956930 3286251395 2009782090 3200226619
                                                         </CONSTANT-REFERENCE>
                                                     </INIT-VALUE>
                                                 </PARAMETER-DATA-PROTOTYPE>
+                                                <PARAMETER-DATA-PROTOTYPE UUID="95647972-3c80-5f80-ca75-d2c7fbed4d5e">
+                                                    <SHORT-NAME>LIMIT</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/uint8</TYPE-TREF>
+                                                    <INIT-VALUE>
+                                                        <CONSTANT-REFERENCE>
+                                                            <SHORT-LABEL>LIMIT</SHORT-LABEL>
+                                                            <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Company/Powertrain/DataTypes/Ground/LIMIT</CONSTANT-REF>
+                                                        </CONSTANT-REFERENCE>
+                                                    </INIT-VALUE>
+                                                </PARAMETER-DATA-PROTOTYPE>
+                                                <PARAMETER-DATA-PROTOTYPE UUID="90dc0fe9-0a5e-5421-34b4-ed45b411ba9d">
+                                                    <SHORT-NAME>RESET</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/uint8</TYPE-TREF>
+                                                    <INIT-VALUE>
+                                                        <CONSTANT-REFERENCE>
+                                                            <SHORT-LABEL>RESET</SHORT-LABEL>
+                                                            <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Company/Powertrain/DataTypes/Ground/RESET</CONSTANT-REF>
+                                                        </CONSTANT-REFERENCE>
+                                                    </INIT-VALUE>
+                                                </PARAMETER-DATA-PROTOTYPE>
+                                                <PARAMETER-DATA-PROTOTYPE UUID="f37073a8-6dd3-57a9-bc67-0a4c413c6df9">
+                                                    <SHORT-NAME>SUMOUT</SHORT-NAME>
+                                                    <CATEGORY>CURVE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="APPLICATION-PRIMITIVE-DATA-TYPE">/Company/Powertrain/DataTypes/ApplDataTypes/Appl_SUMOUT</TYPE-TREF>
+                                                    <INIT-VALUE>
+                                                        <CONSTANT-REFERENCE>
+                                                            <SHORT-LABEL>SUMOUT</SHORT-LABEL>
+                                                            <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Company/Powertrain/DataTypes/Ground/SUMOUT</CONSTANT-REF>
+                                                        </CONSTANT-REFERENCE>
+                                                    </INIT-VALUE>
+                                                </PARAMETER-DATA-PROTOTYPE>
                                             </CONSTANT-MEMORYS>
+                                            <DATA-TYPE-MAPPING-REFS>
+                                                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/Company/Powertrain/DataTypes/DataTypeMappings/autosar_swc_counterDataTypeMappingsSet</DATA-TYPE-MAPPING-REF>
+                                            </DATA-TYPE-MAPPING-REFS>
                                             <AR-TYPED-PER-INSTANCE-MEMORYS>
-                                                <VARIABLE-DATA-PROTOTYPE UUID="e1e9c677-ee6f-5bfd-0b23-4e0c0de1424b">
+                                                <VARIABLE-DATA-PROTOTYPE UUID="5758b82a-da4f-5beb-56f8-e03a04ce8231">
                                                     <SHORT-NAME>autosar_swc_co_UnitDelay_DSTATE</SHORT-NAME>
                                                     <CATEGORY>VALUE</CATEGORY>
                                                     <SW-DATA-DEF-PROPS>
@@ -121,80 +160,20 @@ Model Checksum               : 3688956930 3286251395 2009782090 3200226619
                                                     <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
                                                     <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Company/Powertrain/DataTypes/SwAddrMethods/CODE</SW-ADDR-METHOD-REF>
                                                     <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
-                                                    <DATA-READ-ACCESSS>
-                                                        <VARIABLE-ACCESS UUID="0b6054c0-335e-5d0c-a917-be8c3497d38b">
-                                                            <SHORT-NAME>IN_RPort_InData</SHORT-NAME>
-                                                            <ACCESSED-VARIABLE>
-                                                                <AUTOSAR-VARIABLE-IREF>
-                                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Company/Powertrain/Components/autosar_swc_counter/RPort</PORT-PROTOTYPE-REF>
-                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Company/Powertrain/Interfaces/InIf/InData</TARGET-DATA-PROTOTYPE-REF>
-                                                                </AUTOSAR-VARIABLE-IREF>
-                                                            </ACCESSED-VARIABLE>
-                                                        </VARIABLE-ACCESS>
-                                                    </DATA-READ-ACCESSS>
                                                     <DATA-WRITE-ACCESSS>
-                                                        <VARIABLE-ACCESS UUID="19322069-b8a3-5925-3313-d10e356e787c">
-                                                            <SHORT-NAME>OUT_SPort_OutData</SHORT-NAME>
+                                                        <VARIABLE-ACCESS UUID="ca5e5880-667d-53d0-8fea-c7eda91bd3b3">
+                                                            <SHORT-NAME>OUT_Lookup_Lookup</SHORT-NAME>
                                                             <ACCESSED-VARIABLE>
                                                                 <AUTOSAR-VARIABLE-IREF>
-                                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Company/Powertrain/Components/autosar_swc_counter/SPort</PORT-PROTOTYPE-REF>
-                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Company/Powertrain/Interfaces/OutIf/OutData</TARGET-DATA-PROTOTYPE-REF>
+                                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Company/Powertrain/Components/autosar_swc_counter/Lookup</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Company/Powertrain/Interfaces/Lookup_Val/Lookup</TARGET-DATA-PROTOTYPE-REF>
                                                                 </AUTOSAR-VARIABLE-IREF>
                                                             </ACCESSED-VARIABLE>
                                                         </VARIABLE-ACCESS>
                                                     </DATA-WRITE-ACCESSS>
-                                                    <PARAMETER-ACCESSS>
-                                                        <PARAMETER-ACCESS UUID="c9c48fbe-0944-5540-508f-73ea8f372bdc">
-                                                            <SHORT-NAME>SCALPRM_AMP</SHORT-NAME>
-                                                            <ACCESSED-PARAMETER>
-                                                                <LOCAL-PARAMETER-REF DEST="PARAMETER-DATA-PROTOTYPE">/Company/Powertrain/Components/autosar_swc_counter/ASWC_IB/AMP</LOCAL-PARAMETER-REF>
-                                                            </ACCESSED-PARAMETER>
-                                                        </PARAMETER-ACCESS>
-                                                    </PARAMETER-ACCESSS>
                                                     <SYMBOL>Runnable_Step</SYMBOL>
                                                 </RUNNABLE-ENTITY>
                                             </RUNNABLES>
-                                            <SHARED-PARAMETERS>
-                                                <PARAMETER-DATA-PROTOTYPE UUID="cf53d010-855d-562f-b11c-5441bded0d60">
-                                                    <SHORT-NAME>K</SHORT-NAME>
-                                                    <CATEGORY>VALUE</CATEGORY>
-                                                    <SW-DATA-DEF-PROPS>
-                                                        <SW-DATA-DEF-PROPS-VARIANTS>
-                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
-                                                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
-                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
-                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
-                                                        </SW-DATA-DEF-PROPS-VARIANTS>
-                                                    </SW-DATA-DEF-PROPS>
-                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/uint8</TYPE-TREF>
-                                                    <INIT-VALUE>
-                                                        <CONSTANT-REFERENCE>
-                                                            <SHORT-LABEL>K</SHORT-LABEL>
-                                                            <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Company/Powertrain/DataTypes/Ground/K</CONSTANT-REF>
-                                                        </CONSTANT-REFERENCE>
-                                                    </INIT-VALUE>
-                                                </PARAMETER-DATA-PROTOTYPE>
-                                                <PARAMETER-DATA-PROTOTYPE UUID="a02dc59e-d5e3-52d3-ac8a-74e1763938d4">
-                                                    <SHORT-NAME>AMP</SHORT-NAME>
-                                                    <CATEGORY>VALUE</CATEGORY>
-                                                    <SW-DATA-DEF-PROPS>
-                                                        <SW-DATA-DEF-PROPS-VARIANTS>
-                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
-                                                                <SW-ADDR-METHOD-REF DEST="SW-ADDR-METHOD">/Company/Powertrain/DataTypes/SwAddrMethods/VAR</SW-ADDR-METHOD-REF>
-                                                                <SW-CALIBRATION-ACCESS>READ-WRITE</SW-CALIBRATION-ACCESS>
-                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
-                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
-                                                        </SW-DATA-DEF-PROPS-VARIANTS>
-                                                    </SW-DATA-DEF-PROPS>
-                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Company/Powertrain/DataTypes/uint8</TYPE-TREF>
-                                                    <INIT-VALUE>
-                                                        <CONSTANT-REFERENCE>
-                                                            <SHORT-LABEL>AMP</SHORT-LABEL>
-                                                            <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/Company/Powertrain/DataTypes/Ground/AMP</CONSTANT-REF>
-                                                        </CONSTANT-REFERENCE>
-                                                    </INIT-VALUE>
-                                                </PARAMETER-DATA-PROTOTYPE>
-                                            </SHARED-PARAMETERS>
                                             <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
                                         </SWC-INTERNAL-BEHAVIOR>
                                     </INTERNAL-BEHAVIORS>

@@ -7,7 +7,7 @@
    This file is generated for:
    Atomic software component:  "autosar_swc_counter"
    ARXML schema: "R20-11"
-   File generated on: "28-Mar-2025 05:09:50"  */
+   File generated on: "31-Mar-2025 07:40:04"  */
 
 #ifndef Rte_Type_h
 #define Rte_Type_h
@@ -41,6 +41,20 @@
 
 /* AUTOSAR Implementation data types, specific to software component */
 typedef uint8 UInt8_my_qualifier_const;
+
+/* AUTOSAR Structure Types */
+#ifndef DEFINED_TYPEDEF_FOR_SUMOUT_LOOKUP_
+#define DEFINED_TYPEDEF_FOR_SUMOUT_LOOKUP_
+
+typedef struct {
+  uint8 BP1[6];
+  uint8 Table[6];
+} SUMOUT_LOOKUP;
+
+#endif
+
+/* AUTOSAR Array Types */
+typedef uint8 rt_Array_uint8_6[6];
 typedef void* Rte_Instance;
 
 #endif

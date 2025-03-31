@@ -1,9 +1,5 @@
 #C:\Users\PC\Documents\Calib\AUTOSARCounterExample\autosar_swc_counter_autosar_rtw\stub\Rte_autosar_swc_counter.h
 #this file contains the list of RTE methods that the profiling must filter out
--Rte_IRead_Runnable_Step_RPort_InData
--Rte_IStatus_Runnable_Step_RPort_InData
--Rte_IWrite_Runnable_Step_SPort_OutData
--Rte_IWriteRef_Runnable_Step_SPort_OutData
--Rte_CData_AMP
--Rte_CData_K
+-Rte_IWrite_Runnable_Step_Lookup_Lookup
+-Rte_IWriteRef_Runnable_Step_Lookup_Lookup
 -Rte_Pim_autosar_swc_co_UnitDelay_DSTATE

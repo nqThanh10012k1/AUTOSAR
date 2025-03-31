@@ -2,7 +2,7 @@
 ## Makefile generated for component 'autosar_swc_counter'. 
 ## 
 ## Makefile     : autosar_swc_counter.mk
-## Generated on : Fri Mar 28 05:02:56 2025
+## Generated on : Mon Mar 31 07:03:54 2025
 ## Final product: $(RELATIVE_PATH_TO_ANCHOR)/autosar_swc_counter.exe
 ## Product type : executable
 ## 
@@ -26,7 +26,7 @@ START_DIR                 = C:/Users/PC/Documents/Calib/AUTOSARCounterExample
 SOLVER                    = 
 SOLVER_OBJ                = 
 CLASSIC_INTERFACE         = 0
-TGT_FCN_LIB               = None
+TGT_FCN_LIB               = AUTOSAR 4.0
 MODEL_HAS_DYNAMICALLY_LOADED_SFCNS = 0
 RELATIVE_PATH_TO_ANCHOR   = ..
 CMD_FILE                  = autosar_swc_counter.rsp
@@ -177,7 +177,7 @@ PREBUILT_OBJS =
 ## LIBRARIES
 ###########################################################################
 
-LIBS = 
+LIBS = $(START_DIR)/slprj/autosar/_sharedutils/rtwshared.lib
 
 ###########################################################################
 ## SYSTEM LIBRARIES
@@ -215,7 +215,7 @@ all : build
 build : prebuild $(PRODUCT)
 
 
-buildobj : prebuild $(OBJS) $(PREBUILT_OBJS)
+buildobj : prebuild $(OBJS) $(PREBUILT_OBJS) $(LIBS)
 	@echo "### Successfully generated all binary outputs."
 
 
@@ -239,9 +239,9 @@ execute : download
 # Create a standalone executable            
 #-------------------------------------------
 
-$(PRODUCT) : $(OBJS) $(PREBUILT_OBJS)
+$(PRODUCT) : $(OBJS) $(PREBUILT_OBJS) $(LIBS)
 	@echo "### Creating standalone executable "$(PRODUCT)" ..."
-	$(LD) $(LDFLAGS) -o $(PRODUCT) @$(CMD_FILE) $(subst /,\,$(SYSTEM_LIBS)) $(subst /,\,$(TOOLCHAIN_LIBS))
+	$(LD) $(LDFLAGS) -o $(PRODUCT) @$(CMD_FILE) $(subst /,\,$(LIBS)) $(subst /,\,$(SYSTEM_LIBS)) $(subst /,\,$(TOOLCHAIN_LIBS))
 	@echo "### Created: $(PRODUCT)"
 
 

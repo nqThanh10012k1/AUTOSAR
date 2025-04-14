@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model NSW
-Model version                : 1.3
+Model version                : 1.4
 Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
-XML source code generated on : Sun Apr 13 23:48:02 2025
-Model Checksum               : 31386864 136917986 2897589170 245496090
+XML source code generated on : Mon Apr 14 07:18:48 2025
+Model Checksum               : 3602013588 910546303 83701534 1862546894
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
     <AR-PACKAGES>

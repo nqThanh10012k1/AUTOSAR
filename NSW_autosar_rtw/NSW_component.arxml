@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 Auto generated XML Component Description for model NSW
-Model version                : 1.3
+Model version                : 1.4
 Simulink Coder version       : Simulink Coder 9.9 (R2023a) 19-Nov-2022
-XML source code generated on : Sun Apr 13 23:48:02 2025
-Model Checksum               : 31386864 136917986 2897589170 245496090
+XML source code generated on : Mon Apr 14 07:18:48 2025
+Model Checksum               : 3602013588 910546303 83701534 1862546894
 -->
 <AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_00050.xsd">
     <AR-PACKAGES>
@@ -16,8 +16,23 @@ Model Checksum               : 31386864 136917986 2897589170 245496090
                     <INTERNAL-BEHAVIORS>
                         <SWC-INTERNAL-BEHAVIOR UUID="a21336b4-d9f0-567e-ef03-b78ab271fae7">
                             <SHORT-NAME>NSW_IB</SHORT-NAME>
+                            <STATIC-MEMORYS>
+                                <VARIABLE-DATA-PROTOTYPE UUID="f7f8971f-4402-5a48-f4da-cf5efa53027d">
+                                    <SHORT-NAME>NSW_NV_Data</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/UInt8</TYPE-TREF>
+                                </VARIABLE-DATA-PROTOTYPE>
+                            </STATIC-MEMORYS>
                             <AR-TYPED-PER-INSTANCE-MEMORYS>
-                                <VARIABLE-DATA-PROTOTYPE UUID="cfda8e74-6602-50c4-7fb3-659702529ad5">
+                                <VARIABLE-DATA-PROTOTYPE UUID="1d46d83e-e97d-5c55-8b37-9bfea9c8d323">
                                     <SHORT-NAME>NSW_Nv_Block</SHORT-NAME>
                                     <CATEGORY>VALUE</CATEGORY>
                                     <SW-DATA-DEF-PROPS>
@@ -32,10 +47,10 @@ Model Checksum               : 31386864 136917986 2897589170 245496090
                                 </VARIABLE-DATA-PROTOTYPE>
                             </AR-TYPED-PER-INSTANCE-MEMORYS>
                             <EVENTS>
-                                <TIMING-EVENT UUID="8e4db51f-2fa3-52aa-e118-bcee6785b2b5">
-                                    <SHORT-NAME>Event_NSW_Step</SHORT-NAME>
-                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/NSW/NSW_IB/NSW_Step</START-ON-EVENT-REF>
-                                    <PERIOD>0.2</PERIOD>
+                                <TIMING-EVENT UUID="d5bba5a4-7cce-52a3-5c11-5acec19d5d3f">
+                                    <SHORT-NAME>Event_RE_NSW_MainFunction</SHORT-NAME>
+                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Components/NSW/NSW_IB/RE_NSW_MainFunction</START-ON-EVENT-REF>
+                                    <PERIOD>0.01</PERIOD>
                                 </TIMING-EVENT>
                             </EVENTS>
                             <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
@@ -46,15 +61,15 @@ Model Checksum               : 31386864 136917986 2897589170 245496090
                                     <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
                                     <SYMBOL>NSW_Init</SYMBOL>
                                 </RUNNABLE-ENTITY>
-                                <RUNNABLE-ENTITY UUID="c7a0d91f-ff27-56ef-50f9-e6aa7516f6ed">
-                                    <SHORT-NAME>NSW_Step</SHORT-NAME>
+                                <RUNNABLE-ENTITY UUID="51654611-e2de-5773-5bf6-79a154ef6e04">
+                                    <SHORT-NAME>RE_NSW_MainFunction</SHORT-NAME>
                                     <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
                                     <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
-                                    <SYMBOL>NSW_Step</SYMBOL>
+                                    <SYMBOL>RE_NSW_MainFunction</SYMBOL>
                                 </RUNNABLE-ENTITY>
                             </RUNNABLES>
                             <SERVICE-DEPENDENCYS>
-                                <SWC-SERVICE-DEPENDENCY UUID="407022ba-8e29-5b59-9184-b38070c960d6">
+                                <SWC-SERVICE-DEPENDENCY UUID="584c85b5-f124-5cde-65e4-53745026b97d">
                                     <SHORT-NAME>SwcNv_NSW_Nv_Block</SHORT-NAME>
                                     <ASSIGNED-DATAS>
                                         <ROLE-BASED-DATA-ASSIGNMENT>
@@ -65,7 +80,7 @@ Model Checksum               : 31386864 136917986 2897589170 245496090
                                         </ROLE-BASED-DATA-ASSIGNMENT>
                                     </ASSIGNED-DATAS>
                                     <SERVICE-NEEDS>
-                                        <NV-BLOCK-NEEDS UUID="4a3b1e8e-acc3-585b-d298-f40658aae865">
+                                        <NV-BLOCK-NEEDS UUID="dd152e1a-dbc2-5452-2b4b-c81ee7ce6c44">
                                             <SHORT-NAME>SwcNv_NSW_Nv_Block</SHORT-NAME>
                                             <RESTORE-AT-START>true</RESTORE-AT-START>
                                             <STORE-AT-SHUTDOWN>true</STORE-AT-SHUTDOWN>

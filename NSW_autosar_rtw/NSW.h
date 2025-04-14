@@ -8,5 +8,8 @@
 
 #include "NSW_types.h"
 #include "Rte_Type.h"
+
+extern uint8 NSW_NV_Data;
+
 #endif
 

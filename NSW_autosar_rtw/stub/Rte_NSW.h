@@ -7,7 +7,7 @@
    This file is generated for:
    Atomic software component:  "NSW"
    ARXML schema: "R21-11"
-   File generated on: "13-Apr-2025 23:47:59"  */
+   File generated on: "14-Apr-2025 07:18:48"  */
 
 #ifndef Rte_NSW_h
 #define Rte_NSW_h
@@ -16,7 +16,7 @@
 
 /* Entry point functions */
 extern FUNC(void, NSW_CODE) NSW_Init(void);
-extern FUNC(void, NSW_CODE) NSW_Step(void);
+extern FUNC(void, NSW_CODE) RE_NSW_MainFunction(void);
 
 /* AR-Typed Per Instance Memories */
 UInt8* Rte_Pim_NSW_Nv_Block(void);

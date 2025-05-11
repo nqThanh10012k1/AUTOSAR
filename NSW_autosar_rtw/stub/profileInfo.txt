@@ -1,3 +1,0 @@
-#C:\Users\PC\Desktop\SIMWS\NvM\NSW_autosar_rtw\stub\Rte_NSW.h
-#this file contains the list of RTE methods that the profiling must filter out
--Rte_Pim_NSW_Nv_Block
